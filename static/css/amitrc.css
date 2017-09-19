@@ -1,0 +1,50 @@
+html, body {
+    background-color: #636363;
+    color: #1e1e1e;
+    height: 100%;
+    font-family: 'Lato', sans-serif;
+}
+
+#header {
+    height: 125px;
+    background-color: white;
+}
+
+#ucr-logo {
+    position: relative;
+    width: 100%;
+}
+
+.vc {
+    top: 50%;
+    transform: translateY(-50%);
+    position: absolute;
+}
+
+#header-title:after {
+    border-left: 1px #303030 solid;
+    content : "";
+    position: absolute;
+    left    : 0;
+    bottom  : 0;
+    height  : 70%;
+    width   : 50%;  
+    top: 50%;
+    transform: translateY(-50%)
+}
+
+#header-title p {
+    margin-bottom: 0;
+}
+
+.primary {
+    color: #2d6cc0 !important;
+}
+
+.no-margin {
+    margin: 0 0;
+}
+
+.inherit-height {
+    height: 100%;
+}
