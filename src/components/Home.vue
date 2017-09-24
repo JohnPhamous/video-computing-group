@@ -111,60 +111,47 @@
         <div id="sponsors" class="row text-center">
           <h3>Acknowledgements</h3>
           <p>The Video Computing Group graciously acknowledges the funding received from a number of government agencies and private corporations.</p>
-          <div class="col-md-2">
-            <a href="#"><img class="news" src="../../static/img/image3.png" alt=""></a>
+          <div class="col-md-1 col-md-offset-1">
+            <a href="#"><img class="news" src="../../static/img/sponsors/afosr.png" alt="AFOSR"></a>
           </div>
-          <div class="col-md-2">
-            <a href="#"><img class="news" src="../../static/img/image3.png" alt=""></a>
+          <div class="col-md-1">
+            <a href="#"><img class="news" src="../../static/img/sponsors/aro.gif" alt="ARO"></a>
           </div>
-          <div class="col-md-2">
-            <a href="#"><img class="news" src="../../static/img/image3.png" alt=""></a>
+          <div class="col-md-1">
+            <a href="#"><img class="news" src="../../static/img/sponsors/cisco.png" alt="CISCO"></a>
           </div>
-          <div class="col-md-2">
-            <a href="#"><img class="news" src="../../static/img/image3.png" alt=""></a>
+          <div class="col-md-1">
+            <a href="#"><img class="news" src="../../static/img/sponsors/dapra.png" alt="DARPA"></a>
           </div>
-          <div class="col-md-2">
-            <a href="#"><img class="news" src="../../static/img/image3.png" alt=""></a>
+          <div class="col-md-1">
+            <a href="#"><img class="news" src="../../static/img/sponsors/google.png" alt="Google"></a>
           </div>
-          <div class="col-md-2">
-            <a href="#"><img class="news" src="../../static/img/image3.png" alt=""></a>
+          <div class="col-md-1">
+            <a href="#"><img class="news" src="../../static/img/sponsors/lockheed.png" alt="Lockheed Martin"></a>
           </div>
-          <div class="col-md-2 col-md-offset-1">
-            <a href="#"><img class="news" src="../../static/img/image3.png" alt=""></a>
+          <div class="col-md-1">
+            <a href="#"><img class="news" src="../../static/img/sponsors/mayachitra.png" alt="Mayachitra"></a>
           </div>
-          <div class="col-md-2">
-            <a href="#"><img class="news" src="../../static/img/image3.png" alt=""></a>
+          <div class="col-md-1">
+            <a href="#"><img class="news" src="../../static/img/sponsors/neh.svg" alt="NEH"></a>
           </div>
-          <div class="col-md-2">
-            <a href="#"><img class="news" src="../../static/img/image3.png" alt=""></a>
+          <div class="col-md-1">
+            <a href="#"><img class="news" src="../../static/img/sponsors/nga.png" alt="NGA"></a>
           </div>
-          <div class="col-md-2">
-            <a href="#"><img class="news" src="../../static/img/image3.png" alt=""></a>
-          </div>
-          <div class="col-md-2">
-            <a href="#"><img class="news" src="../../static/img/image3.png" alt=""></a>
+          <div class="col-md-1">
+            <a href="#"><img class="news" src="../../static/img/sponsors/nsf.png" alt="NSF"></a>
           </div>
         </div>
       </div>
      <footer class="footer">
-      <div class="container">
+      <div class="container text-center">
         <div class="row" style="margin-top:25px;">
-          <div class="col-md-4">
+          <div class="col-md-12">
             <p class="text-muted">
               Department of Electrical and Computer Engineering<br/>
               University of California, Riverside<br/>
               Copyright &copy; 2017 Video Computing Group
             </p>
-          </div>
-          <div class="col-md-4">
-            <p class="text-muted">
-              Video Computing Group<br/>
-              Winston Chung Hall 343 <br/>
-              <a href="mailto:amitrc@ece.ucr.edu">amitrc@ece.ucr.edu</a>
-            </p>
-          </div>
-          <div class="col-md-4">
-            <span class="text-muted" style="color:red;">Which logos would you like here?</span>
           </div>
         </div>
       </div>
