@@ -163,3 +163,7 @@ hr {
       background-color: #ffe37f;
       border-color: #dcac00;
   }
+
+  .list-group-item h3 {
+      margin-top: 0px;
+  }
