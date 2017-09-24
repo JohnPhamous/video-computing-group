@@ -14,9 +14,9 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav">
-            <li><a href="#">Publications</a></li>
-            <li><a href="#">Datasets</a></li>
-            <li><a href="#">People</a></li>
+            <li v-for="item in navItems">
+              <router-link :to="item.link">{{item.name}}</router-link>
+            </li>
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Research Projects<span class="caret"></span></a>
               <ul class="dropdown-menu">
@@ -39,7 +39,27 @@
 
 <script>
 export default {
-  name: 'NavAmit'
+  name: 'NavAmit',
+  data: function() {
+    return {
+      navItems: [{
+        name: 'Home',
+        link: '/'
+      },
+      {
+        name: 'Publications',
+        link: '/publications'
+      },
+      {
+        name: 'Datasets',
+        link: '/datasets'
+      },
+      {
+        name: 'People',
+        link: '/people'
+      }]
+    }
+  }
 }
 </script>
 
