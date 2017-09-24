@@ -4,6 +4,16 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 
+import Header from './components/HeaderAmit'
+import Nav from './components/NavAmit'
+import Sponsors from './components/SponsorsAmit'
+import Footer from './components/FooterAmit'
+
+Vue.component('Header', Header)
+Vue.component('Nav', Nav)
+Vue.component('Sponsors', Sponsors)
+Vue.component('Footer', Footer)
+
 Vue.config.productionTip = false
 
 /* eslint-disable no-new */
