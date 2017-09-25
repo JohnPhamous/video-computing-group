@@ -437,6 +437,259 @@ export default {
             
           ],
           year: '2014'
+        },
+        {
+          name: 'Exploiting Spatio-Temporal Scene Structure for Wide-Area Activity Analysis in Unconstrained Environments',
+          note: 'N. Nayak, Y. Zhu, A. Roy-Chowdhury, IEEE Trans. on Information Forensics and Security (Special Issue on Intelligent Video Surveillance), 2013.',
+          link: 'static/publications/tifs_context.pdf',
+          extras: [
+
+          ],
+          year: '2013'
+        },
+        {
+          name: 'Information Weighted Consensus Filters and their Application in Distributed Camera Networks',
+          note: 'A. Kamal, J. A. Farrell, A. Roy-Chowdhury, IEEE Trans. on Automatic Control, 2013.',
+          link: 'static/publications/ICF_TAC.pdf',
+          extras: [
+            {
+              name: 'Code',
+              path: 'static/publications/ICF_Matlab_Code.zip'
+            }
+          ],
+          year: '2013'
+        },
+        {
+          name: 'Context-Aware Modeling and Recognition of Activities in Video',
+          note: 'Y. Zhu, N. Nayak, A. Roy-Chowdhury, IEEE Conf. on Computer Vision and Pattern Recognition, 2013 (Oral).',
+          link: 'static/publications/cvpr2013_context.pdf',
+          extras: [
+            {
+              name: 'Code',
+              path: 'static/publications/download (1).html'
+            }
+          ],
+          year: '2013'
+        },
+        {
+          name: 'Recognizing the Royals - Leveraging Computerized Face Recognition for Identifying Subjects in Ancient Artworks',
+          note: 'R. Srinivasan, A. Roy-Chowdhury, C. Rudolph, J. Kohl, ACM Intl. Conf. on Multimedia, 2013.',
+          link: 'static/publications/acm-mm2013.pdf',
+          extras: [
+
+          ],
+          year: '2013'
+        },
+        {
+          name: 'Information Consensus for Distributed Multi-Target Tracking',
+          note: 'A. Kamal, J. A. Farrell, A. Roy-Chowdhury, IEEE Conf. on Computer Vision and Pattern Recognition, 2013.',
+          link: 'static/publications/CVPR2013_MTIC.pdf',
+          extras: [
+            {
+              name: 'Supplemental Material',
+              path: 'static/publication/CVPR2013_MTIC_Supplementary.pdf'
+            },
+            {
+              name: 'Code',
+              path: 'static/publication/MTIC_Matlab_Code (1).zip'
+            }
+          ],
+          year: '2013'
+        },
+        {
+          name: 'Modeling Multi-object Interactions using "String of Feature Graphs"',
+          note: 'Y. Zhu, N. Nayak, U. Gaur, B. Song, A. Roy-Chowdhury, Computer Vision and Image Understanding, 2013.',
+          link: 'static/publications/cviu13.pdf',
+          extras: [
+
+          ],
+          year: '2013'
+        },
+        {
+          name: 'Adaptive Geometric Tessellation For 3D Reconstruction of Anisotropically Developing Cells In Multilayer Tissues From Sparse Volumetric Microscopy Images',
+          note: 'A. Chakraborty, M. Perales, G. V. Reddy, A. Roy-Chowdhury, PLOS One, 2013.',
+          link: 'static/publications/article.html',
+          extras: [
+
+          ],
+          year: '2013'
+        },
+        {
+          name: 'Context-Aware Activity Recognition and Anomaly Detection in Video',
+          note: 'Y. Zhu, N. Nayak, A. Roy-Chowdhury, IEEE Journal on Selected Topics in Signal Processing, Special Issue on Anomalous Pattern Discovery, February 2013.',
+          link: 'static/publications/jstsp13.pdf',
+          extras: [
+            {
+              name: 'Code',
+              path: 'static/publications/download (2).html'
+            }
+          ],
+          year: '2013'
+        },
+        {
+          name: 'Vector Field Analysis for Multi-Object Behavior Modeling',
+          note: 'N. Nayak, Y. Zhu, A. Roy-Chowdhury, Image and Vision Computing, 2013.',
+          link: 'static/publications/N. Nayak, Y. Zhu, A. Roy-Chowdhury, Image and Vision Computing, 2013.',
+          extras: [
+
+          ],
+          year: '2013'
+        },
+        {
+          name: 'Quantitative Analysis of Live-Cell Growth at the Shoot Apex of Arabidopsis thaliana: Algorithms for Feature Measurement and Temporal alignment',
+          note: 'M. Tataw, V. Reddy, E. Keogh, A. Roy-Chowdhury, IEEE/ACM Trans. on Computational Biology and Biomedicine, 2013 (In Press).',
+          link: 'static/publications/tataw_tcbb_final.pdf',
+          extras: [
+
+          ],
+          year: '2013'
+        },
+        {
+          name: 'Automated Registration of Live Imaging Stacks of Arabidopsis',
+          note: 'K. Mkrtchyan, A. Chakraborty, A. Roy-Chowdhury, International Symposium on Biomedical Imaging, 2013.',
+          link: 'static/publications/isbi2013_Katya.pdf',
+          extras: [
+
+          ],
+          year: '2013'
+        },
+        {
+          name: 'Collaborative Sensing In A Distributed PTZ Camera Network',
+          note: 'C. Ding, B. Song, A. Morye, J. A. Farrell, A. Roy-Chowdhury, IEEE Trans. on Image Processing, 2012.',
+          link: 'static/publications/tip_cding2012.pdf',
+          extras: [
+
+          ],
+          year: '2012'
+        },
+        {
+          name: 'Features with Feeling - Incorporating User Preferences in Video Categorization',
+          note: 'R. Srinivasan, A. Roy-Chowdhury, Asian Conference on Computer Vision, 2012.',
+          link: 'static/publications/accv-2012-final.pdf',
+          extras: [
+
+          ],
+          year: '2012'
+        },
+        {
+          name: 'Information Weighted Consensus',
+          note: 'A. Kamal, J. A. Farrell, A. Roy-Chowdhury, IEEE Controls and Decision Conf., 2012.',
+          link: 'static/publications/CDC_2012.pdf',
+          extras: [
+            {
+              name: 'Code',
+              path: 'static/publications/CameraNetworks.php'
+            }
+          ],
+          year: '2012'
+        },
+        {
+          name: 'Alignment of Real-Time Live-Cell Growth Data for Quantitative Analysis of Growth at the Shoot Apex of Arabidopsis thaliana',
+          note: 'M. Tataw, V. Reddy, A. Roy-Chowdhury, ACM Conference on Bioinformatics, Computational Biology and Biomedicine, 2012.',
+          link: 'static/publications/publications.php',
+          extras: [
+
+          ],
+          year: '2012'
+        },
+        {
+          name: 'Opportunistic Sensing In A Distributed PTZ Camera Network',
+          note: 'C. Ding, A. Morye, J. A. Farrell, A. Roy-Chowdhury, IEEE Intl. Conf. on Distributed Smart Cameras, 2012.',
+          link: 'static/publications/icdsc2012.pdf',
+          extras: [
+
+          ],
+          year: '2012'
+        },
+        {
+          name: 'Coordinated Sensing and Tracking for Mobile Camera Platforms',
+          note: 'C. Ding, A. Morye, J. A. Farrell, A. Roy-Chowdhury, American Controls Conf., 2012.',
+          link: 'static/publications/ACC_2012.pdf',
+          extras: [
+
+          ],
+          year: '2012'
+        },
+        {
+          name: '',
+          note: '',
+          link: 'static/publications/',
+          extras: [
+
+          ],
+          year: '2011'
+        },
+        {
+          name: '',
+          note: '',
+          link: 'static/publications/',
+          extras: [
+
+          ],
+          year: '2010'
+        },
+        {
+          name: '',
+          note: '',
+          link: 'static/publications/',
+          extras: [
+
+          ],
+          year: '2009'
+        },
+        {
+          name: '',
+          note: '',
+          link: 'static/publications/',
+          extras: [
+
+          ],
+          year: '2008'
+        },
+        {
+          name: '',
+          note: '',
+          link: 'static/publications/',
+          extras: [
+
+          ],
+          year: '2007'
+        },
+        {
+          name: '',
+          note: '',
+          link: 'static/publications/',
+          extras: [
+
+          ],
+          year: '2006'
+        },
+        {
+          name: '',
+          note: '',
+          link: 'static/publications/',
+          extras: [
+
+          ],
+          year: '2005'
+        },
+        {
+          name: '',
+          note: '',
+          link: 'static/publications/',
+          extras: [
+
+          ],
+          year: '2004'
+        },
+        {
+          name: '',
+          note: '',
+          link: 'static/publications/',
+          extras: [
+
+          ],
+          year: '2003'
         }
       ]
     }
