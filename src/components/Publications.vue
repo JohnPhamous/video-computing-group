@@ -348,6 +348,95 @@ export default {
             }
           ],
           year: '2015'
+        },
+        {
+          name: 'Context Aware Spatio-temporal Cell Tracking In Densely Packed Multilayer Tissues',
+          note: 'A. Chakraborty, A. Roy-Chowdhury, Medical Image Analysis, 2014.',
+          link: 'static/publications/MedIA-14.pdf',
+          extras: [
+            {
+              name: 'Supplemental Material',
+              path: 'static/publications/MedIA-Supplementary.pdf'
+            },
+            {
+              name: 'Code',
+              path: 'static/publications/Context-CRF-Tracker.zip'
+            }
+          ],
+          year: '2014'
+        },
+        {
+          name: 'Context-Aware Activity Forecasting',
+          note: 'A. Chakraborty, A. Roy-Chowdhury, Asian Conf. on Computer Vision, 2014.',
+          link: 'static/publications/ACCV_2014.pdf',
+          extras: [
+            
+          ],
+          year: '2014'
+        },
+        {
+          name: 'Consistent Re-identification In A Camera Network',
+          note: 'A. Das, A. Chakraborty, A. Roy-Chowdhury, European Conf. on Computer Vision, 2014.',
+          link: 'static/publications/eccv2014-2.pdf',
+          extras: [
+             {
+              name: 'Supplemental Material',
+              path: 'static/publications/NCR_ECCV2014_Supplementary.pdf'
+            },
+            {
+              name: 'Code',
+              path: 'static/publications/NCR_Code.html'
+            }
+          ],
+          year: '2014'
+        },
+        {
+          name: 'Continuous Learning of Human Activity Models Using Deep Nets',
+          note: 'M. Hasan, A. Roy-Chowdhury, European Conf. on Computer Vision, 2014.',
+          link: 'static/publications/eccv2014-1.pdf',
+          extras: [
+            {
+              name: 'Code',
+              path: 'static/publications/hybrid (1).html'
+            }
+          ],
+          year: '2014'
+        },
+        {
+          name: 'Incremental Activity Modeling and Recognition in Streaming Videos',
+          note: 'M. Hasan, A. Roy-Chowdhury, IEEE Conf. on Computer Vision and Pattern Recognition, 2014.',
+          link: 'static/publications/cvpr2014.pdf',
+          extras: [
+            
+          ],
+          year: '2014'
+        },
+        {
+          name: 'Learning A Sparse Dictionary of Video Structure for Activity Modeling',
+          note: 'N. Nayak, A. Roy-Chowdhury, IEEE Intl. Conf. on Image Processing, 2014.',
+          link: 'static/publications/icip2014.pdf',
+          extras: [
+            
+          ],
+          year: '2014'
+        },
+        {
+          name: 'Distributed Constrained Optimization for Bayesian Opportunistic Visual Sensing',
+          note: 'A. Morye, C. Ding, J. A. Farrell, A. Roy-Chowdhury, IEEE Trans. on Control Systems Technology, 2014.',
+          link: 'static/publications/akshay_tcst.pdf',
+          extras: [
+            
+          ],
+          year: '2014'
+        },
+        {
+          name: 'Managing Redundant Content in Bandwidth Constrained Wireless Networks',
+          note: 'T. Dao, S. Krishnamurthy, A. Roy-Chowdhury, T. LaPorta, International Conf. on emerging Networking EXperiments and Technologies, 2014.',
+          link: 'static/publications/conext_2014.pdf',
+          extras: [
+            
+          ],
+          year: '2014'
         }
       ]
     }
