@@ -167,3 +167,18 @@ hr {
   .list-group-item h3 {
       margin-top: 0px;
   }
+
+  .person h4 {
+      margin-top: 0px;
+      padding-bottom: 10px;
+      border-bottom: 2px #234674 solid;
+  }
+
+  .personActions {
+      margin-top: 10px;
+  }
+
+  .personContainer {
+      margin-bottom: 20px;
+      height: 175px;
+  }
