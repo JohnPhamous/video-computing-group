@@ -611,9 +611,83 @@ export default {
           year: '2012'
         },
         {
-          name: '',
-          note: '',
-          link: 'static/publications/',
+          name: 'Integrated Sensing and Analysis for Wide Area Scene Understanding',
+          note: 'B. Song, C. Ding, A. Kamal, J. Farrell, A. Roy-Chowdhury, Signal Processing Magazine, May 2011.',
+          link: 'static/publications/SPM_camnetwork.pdf',
+          extras: [
+          ],
+          year: '2011'
+        },
+        {
+          name: 'A Physics-Based Analysis of Image Appearance Models',
+          note: 'Y. Xu, A. Roy-Chowdhury, IEEE Trans. on Pattern Analysis and Machine Intelligence, August 2011.',
+          link: 'static/publications/PAMI_2011.pdf',
+          extras: [
+            {
+              name: 'Supplemental Material',
+              path: 'static/publication/SupplementaryMaterial_PAMI2011.pdf'
+            }
+          ],
+          year: '2011'
+        },
+        {
+          name: 'A "String of Feature Graphs" Model for Recognition of Complex Activities in Natural Videos',
+          note: 'U. Gaur, Y. Zhu, B. Song, A. Roy-Chowdhury, IEEE Conf. on Computer Vision, 2011.',
+          link: 'static/publications/iccv-SFG.pdf',
+          extras: [
+
+          ],
+          year: '2011'
+        },
+        {
+          name: 'Cell Resolution 3D Reconstruction of Developing Multilayer Tissues from Sparsely Sampled Volumetric Microscopy Images',
+          note: 'A. Chakraborty, R. Yadav, G. V. Reddy, A. Roy-Chowdhury, IEEE Intl. Conf. on Bioinformatics and Biomedicine, 2011.',
+          link: 'static/publications/bibm11-anirban.pdf',
+          extras: [
+
+          ],
+          year: '2011'
+        },
+        {
+          name: 'A Large-scale Benchmark Dataset for Event Recognition in Surveillance Video',
+          note: 'Sangmin Oh, Anthony Hoogs, Amitha Perera, Naresh Cuntoor, C.-C. Chen, Jong Taek Lee, Saurajit Mukherjee, J. K. Aggarwal, Hyungtae Lee, Larry Davis, Eran Swears, Xioyang Wang, Qiang Ji, Kishore Reddy, Mubarak Shah, Carl Vondrick, Hamed Pirsiavash, Deva Ramanan, Jenny Yuen, Antonio Torralba, Bi Song, Anesco Fong, Amit Roy-Chowdhury, and Mita Desai, IEEE Conf. on Computer Vision and Pattern Recognition, 2011.',
+          link: 'static/publications/cvpr2011.pdf',
+          extras: [
+
+          ],
+          year: '2011'
+        },
+        {
+          name: 'Adaptive Cell Segmentation and Tracking for Volumetric Confocal Microscopy Images of A Developing Plant Meristem',
+          note: 'M. Liu, A. Chakraborty, D. Singh, M. Gopi, R. Yadav, G.V. Reddy, and A. Roy-Chowdhury, Molecular Plant, 2011.',
+          link: 'static/publications/tracking-molplant.pdf',
+          extras: [
+
+          ],
+          year: '2011'
+        },
+        {
+          name: 'Motion Pattern Analysis for Modeling and Recognition of Complex Human Activities',
+          note: 'N. Nayak, R. Sethi, B. Song, A. Roy-Chowdhury, in Guide to Video Analysis of Humans: Looking at People (Eds., T. Moeslund, A. Hilton, V. Kruger, L. Sigal), Springer 2011.',
+          link: 'static/publications/Activity_chapter_nandita.pdf',
+          extras: [
+
+          ],
+          year: '2011'
+        },
+        {
+          name: 'Robust Wide Area Tracking in Single and Multiple Views',
+          note: 'B. Song, R. Sethi, A. Roy-Chowdhury, in Guide to Video Analysis of Humans: Looking at People (Eds., T. Moeslund, A. Hilton, V. Kruger, L. Sigal), Springer 2011',
+          link: 'static/publications/LAPbook_tracking.pdf',
+          extras: [
+
+          ],
+          year: '2011'
+        },
+        {
+          name: 'A Generalized Kalman Consensus Filter for Wide Area Video Networks',
+          note: 'A. Kamal, C. Ding, B. Song, J. A. Farrell, A. Roy-Chowdhury, Controls and Decision Conference, 2011.',
+          link: 'static/publications/cdc11.pdf',
           extras: [
 
           ],
