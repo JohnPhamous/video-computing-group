@@ -42,6 +42,45 @@
                 </li>
               </ul>
             </div>
+
+            <div class="panel panel-primary">
+              <div class="panel-heading">
+                <h3 class="panel-title">Magazines</h3> 
+              </div> 
+              
+              <ul class="list-group">
+                <li class="list-group-item" v-for="a in magazines" :key="a.name">
+                  <span class="badge">Published in {{a.year}}</span>
+                  <a :href="a.link">
+                    <h3>{{a.name}}</h3>
+                    <p><small>{{a.note}}</small></p>
+                  </a>
+                  <div class="extraContainer" v-if="a.extras !== undefined">
+                    <a class="btn btn-primary" v-for="extra in a.extras" :href="extra.path" :key="extra.path">{{extra.name}}</a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            
+            <div class="panel panel-primary">
+              <div class="panel-heading">
+                <h3 class="panel-title">Publications</h3> 
+              </div> 
+              
+              <ul class="list-group">
+                <li class="list-group-item" v-for="a in papers" :key="a.name">
+                  <span class="badge">Published in {{a.year}}</span>
+                  <a :href="a.link">
+                    <h3>{{a.name}}</h3>
+                    <p><small>{{a.note}}</small></p>
+                  </a>
+                  <div class="extraContainer" v-if="a.extras !== undefined">
+                    <a class="btn btn-primary" v-for="extra in a.extras" :href="extra.path" :key="extra.path">{{extra.name}}</a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+
           </div>
         </div> 
       </div>
@@ -1078,13 +1117,74 @@ export default {
           year: '2004'
         },
         {
-          name: '',
-          note: '',
-          link: 'static/publications/',
+          name: 'Stochastic Approximation and Rate Distortion Analysis for Robust Structure and Motion Estimation',
+          note: 'Amit K. Roy-Chowdhury, R. Chellappa, International Journal on Computer Vision. Volume 55(1), pp. 27-53, October 2003.',
+          link: 'static/publications/ijcv_paper.pdf',
           extras: [
 
           ],
           year: '2003'
+        },
+        {
+          name: 'Face Reconstruction From Video Using Uncertainty Analysis and a Generic Model',
+          note: 'Amit K. Roy-Chowdhury, R. Chellappa, Computer Vision and Image Understanding, 91(1-2), pp. 188-213, July-August 2003.',
+          link: 'static/publications/cviu-face.pdf',
+          extras: [
+
+          ],
+          year: '2003'
+        },
+        {
+          name: 'Activity Recognition Using the Dynamics of the Configuration of Interacting Objects Namrata Vaswani',
+          note: 'Amit K. Roy-Chowdhury, R. Chellappa. IEEE Computer Vision and Pattern Recognition, 2003.',
+          link: 'static/publications/hai.pdf',
+          extras: [
+
+          ],
+          year: '2003'
+        },
+        {
+          name: 'A Factorization Approach to Activity Recognition',
+          note: 'Amit K. Roy-Chowdhury, R. Chellappa. CVPR Workshop on Event Mining, 2003.',
+          link: 'static/publications/cvpr03-wrkshp.pdf',
+          extras: [
+
+          ],
+          year: '2003'
+        },
+        {
+          name: 'Towards A View Invariant Gait Recognition Algorithm',
+          note: 'Amit K. Roy-Chowdhury, A. Kale, R. Chellappa. IEEE Intl. Conf. on Advanced Video and Signal Based Surveillance, 2003.',
+          link: 'static/publications/avss03.pdf',
+          extras: [
+
+          ],
+          year: '2003'
+        },
+        {
+          name: 'Deterministic and Statistical Properties of Multi-resolution 3D Modeling',
+          note: 'A. Roy-Chowdhury, H. Liu, R. Chellappa. ICCV Workshop on Statistical and Computational Theories in Vision, 2003.',
+          link: 'static/publications/multi_sctv.pdf',
+          extras: [
+
+          ],
+          year: '2003'
+        }
+      ],
+      magazines: [
+        {
+          name: '"About Face" - National Geographic, November 2003.',
+          note: 'Work on Face Recognition under pose, illumination variations and disguise was featured in this issue (Pages 18-19). The box on the right of the above link illustrates our work.',
+          link: 'static/publications/index.html',
+          year: '2003'
+        }
+      ],
+      papers: [
+        {
+          name: 'Statistical Analysis of 3D Modeling From Monocular Video Streams',
+          note: '',
+          link: 'static/publications/dissertation.pdf',
+          year: '2002'
         }
       ]
     }
