@@ -11,7 +11,7 @@
             
             <div class="panel panel-primary">
               <div class="panel-heading">
-                <h3 class="panel-title">Books and Edited Books</h3> 
+                <h3 class="panel-title">Books and Edited Books</h3>
               </div> 
               
               <ul class="list-group">
