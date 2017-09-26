@@ -697,63 +697,381 @@ export default {
           year: '2011'
         },
         {
-          name: '',
-          note: '',
-          link: 'static/publications/',
+          name: 'Tracking and Activity Recognition Through Consensus in Distributed Camera Networks',
+          note: 'B. Song, A. Kamal, C. Soto, C. Ding, J. Farrell, A. Roy-Chowdhury, IEEE Trans. on Image Processing, 2010.',
+          link: 'static/publications/TIP_consensus2010.pdf',
           extras: [
 
           ],
           year: '2010'
         },
         {
-          name: '',
-          note: '',
-          link: 'static/publications/',
+          name: 'Automated tracking of stem cell lineages of Arabidopsis shoot apex using local graph matching',
+          note: 'M. Liu, R. Yadav, A. Roy-Chowdhury, G.V. Reddy, The Plant Journal, 2010.',
+          link: 'static/publications/tracking-plantjournal.pdf',
+          extras: [
+            {
+              name: 'Supplemental Material',
+              path: 'static/publications/Supplementary Data_PlantJournal.pdf'
+            }
+          ],
+          year: '2010'
+        },
+        {
+          name: 'A Stochastic Graph Evolution Framework for Robust Multi-Target Tracking,',
+          note: 'B. Song, T. Jeng, E. Staudt, A. Roy-Chowdhury, European Conference on Computer Vision, 2010.',
+          link: 'static/publications/eccv2010.pdf',
+          extras: [
+
+          ],
+          year: '2010'
+        },
+        {
+          name: 'Multilinear Feature Extraction and Classification of Multi-Focal Images, With Applications in Nematode Taxonomy',
+          note: 'M. Liu, A. Roy-Chowdhury, IEEE Conf. on Computer Vision and Pattern Recognition, 2010.',
+          link: 'static/publications/cvpr2010.pdf',
+          extras: [
+
+          ],
+          year: '2010'
+        },
+        {
+          name: 'Interactive Event Search Using Transfer Learning',
+          note: 'A. Lam, A. Roy-Chowdhury, C. Shelton, Asian Conf. on Computer Vision, 2010.',
+          link: 'static/publications/accv10.pdf',
+          extras: [
+
+          ],
+          year: '2010'
+        },
+        {
+          name: 'The Human Action Image',
+          note: 'R.J. Sethi, A. Roy-Chowdhury, Intl. Conf. on Pattern Recognition, 2010.',
+          link: 'static/publications/icpr2010_hai.pdf',
+          extras: [
+
+          ],
+          year: '2010'
+        },
+        {
+          name: 'A Neurobiologically Motivated Stochastic Method for Analysis of Human Activities in Video',
+          note: 'R. Sethi, A. Roy-Chowdhury, Intl. Conf. on Pattern Recognition, 2010.',
+          link: 'static/publications/icpr2010_ddhmc.pdf',
+          extras: [
+
+          ],
+          year: '2010'
+        },
+        {
+          name: 'Rate-invariant Recognition of Humans and Their Activities',
+          note: 'A. Veeraraghavan, A. Srivastava, A. Roy-Chowdhury and R. Chellappa, IEEE Trans. on Image Processing, June 2009.',
+          link: 'static/publications/Rate-invariant.pdf',
           extras: [
 
           ],
           year: '2009'
         },
         {
-          name: '',
-          note: '',
-          link: 'static/publications/',
+          name: 'Distributed Multi-Target Tracking In A Self-Configuring Camera Network',
+          note: 'C. Soto, B. Song, A. Roy-Chowdhury, IEEE Conf. on Computer Vision and Pattern Recognition, 2009.',
+          link: 'static/publications/cvpr09.pdf',
+          extras: [
+
+          ],
+          year: '2009'
+        },
+        {
+          name: 'Face Tracking',
+          note: 'A. Roy-Chowdhury and Y. Xu, Encyclopedia of Biometrics, Springer, 2009.',
+          link: 'static/publications/encycl_biometrics.pdf',
+          extras: [
+
+          ],
+          year: '2009'
+        },
+        {
+          name: 'Model-based Multi-view Video Compression Using Distributed Source Coding Principles',
+          note: 'J. Nayak, B. Song, E. Tuncel, A. Roy-Chowdhury. Distributed Source Coding: Theory, Algorithms and Applications (Eds. P. Luigi and M. Gatspar), Elsevier, 2009.',
+          link: 'static/publications/MultiViewDVC.pdf',
+          extras: [
+
+          ],
+          year: '2009'
+        },
+        {
+          name: 'Combining Geometrical and Statistical Models for Video-based Face Recognition',
+          note: 'A. Roy-Chowdhury and Y. Xu., Multi-Biometric Systems for Identity Recognition: Theory and Experiments, (Eds. N.V. Boulgouris, K.N. Plataniotis and E. Micheli-Tzanakou), IEEE Press, In Press.',
+          link: 'static/publications/GAM BookChapter.pdf',
+          extras: [
+
+          ],
+          year: '2009'
+        },
+        {
+          name: 'Query-based Retrieval of Complex Activities using �Strings of Motion-Words�',
+          note: 'U. Gaur, B. Song, A. Roy-Chowdhury, IEEE Workshop on Motion and Video Computing, 2009.',
+          link: 'static/publications/wmvc09-2.pdf',
+          extras: [
+
+          ],
+          year: '2009'
+        },
+        {
+          name: 'Robust Tracking in A Camera Network: A Multi-Objective Optimization Framework',
+          note: 'B. Song and A. Roy-Chowdhury, IEEE Journal on Selected Topics in Signal Processing: Special Issue on Distributed Processing in Vision Networks, August 2008.',
+          link: 'static/publications/stamp.html',
           extras: [
 
           ],
           year: '2008'
         },
         {
-          name: '',
-          note: '',
-          link: 'static/publications/',
+          name: 'Inverse Compositional Estimation of 3D Pose And Lighting in Dynamic Scenes',
+          note: 'Y. Xu and A. Roy-Chowdhury, IEEE Trans. on Pattern Analysis and Machine Intelligence, July 2008.',
+          link: 'static/publications/pami08.pdf',
+          extras: [
+
+          ],
+          year: '2008'
+        },
+        {
+          name: 'A Theoretical Analysis of Linear and Multi-linear Models of Image Appearance',
+          note: 'Y. Xu, A. Roy-Chowdhury, IEEE Conf. on Computer Vision and Pattern Recognition, 2008.',
+          link: 'static/publications/cvpr08_theory.pdf',
+          extras: [
+
+          ],
+          year: '2008'
+        },
+        {
+          name: 'Learning A Geometry-Integrated Image Appearance Manifold From A Small Training Set',
+          note: 'Y. Xu, A. Roy-Chowdhury, IEEE Conf. on Computer Vision and Pattern Recognition, 2008.',
+          link: 'static/publications/cvpr08_GAM.pdf',
+          extras: [
+
+          ],
+          year: '2008'
+        },
+        {
+          name: 'Integrating Illumination, Motion and Shape Models for Robust Face Recognition In Video',
+          note: 'Y.Xu, A. Roy-Chowdhury and K. Patel, EURASIP Journal on Advances in Signal Processing: Advanced Signal Processing and Pattern Recognition Methods for Biometrics, 2008.',
+          link: 'static/publications/download (3).html',
+          extras: [
+
+          ],
+          year: '2008'
+        },
+        {
+          name: 'Activity Representation Using 3D Shape Models',
+          note: 'M. Abdelkader, A. Roy-Chowdhury, R. Chellappa and U. Akdemir, EURASIP Journal on Image and Video Processing: Special Issue on Anthropocentric Video Analysis: Tools and Applications, 2008.',
+          link: 'static/publications/paper_Eurasip.pdf',
+          extras: [
+
+          ],
+          year: '2008'
+        },
+        {
+          name: 'Multi-Target Tracking Through Opportunistic Camera Control In A Resource Constrained Multimodal Sensor Network',
+          note: 'J. Nayak, L. Gonzalez-Argueta, B. Song, A. Roy-Chowdhury, and E. Tuncel, IEEE/ACM Intl. Conf. on Distributed Smart Cameras, 2008.',
+          link: 'static/publications/icdsc08.pdf',
+          extras: [
+
+          ],
+          year: '2008'
+        },
+        {
+          name: 'Integrating Motion, Illumination and Structure in Video Sequences, With Applications in Illumination-Invariant Tracking',
+          note: 'Y. Xu and A. Roy-Chowdhury, IEEE Trans. on Pattern Analysis and Machine Intelligence, May 2007.',
+          link: 'static/publications/stamp (1).html',
           extras: [
 
           ],
           year: '2007'
         },
         {
-          name: '',
-          note: '',
-          link: 'static/publications/',
+          name: 'Towards A Measure of Deformability of Shape Sequences',
+          note: 'A. Roy-Chowdhury, Pattern Recognition Letters, Vol. 28, 2007.',
+          link: 'static/publications/shape_prl.pdf',
+          extras: [
+
+          ],
+          year: '2007'
+        },
+        {
+          name: 'Stochastic Adaptive Tracking In A Camera Network',
+          note: 'B. Song, A. Roy-Chowdhury, IEEE Intl. Conf. on Computer Vision, 2007.',
+          link: 'static/publications/iccv07.pdf',
+          extras: [
+
+          ],
+          year: '2007'
+        },
+        {
+          name: 'Closed-loop Tracking and Change Detection in Multi-Activity Sequences',
+          note: 'B. Song, N. Vaswani, A. Roy-Chowdhury, IEEE Computer Vision and Pattern Recognition, 2007.',
+          link: 'static/publications/cvpr07.pdf',
+          extras: [
+
+          ],
+          year: '2007'
+        },
+        {
+          name: 'Pose and Illumination Invariant Face Recognition Using Video Sequences',
+          note: 'A. Roy-Chowdhury, Y. Xu, Multi-Biometric Systems for Identity Recognition: Theory and Experiments, (Eds. R. Hammoud, M. Abidi and B. Abidi), Springer-Verlag, 2007.',
+          link: 'static/publications/face-chapter.pdf',
+          extras: [
+
+          ],
+          year: '2007'
+        },
+        {
+          name: 'Super-resolved Facial Texture Under Changing Pose and Illumination',
+          note: 'J. Yu, B. Bhanu, Y. Xu, A. Roy-Chowdhury, IEEE Intl. Conf. on Image Processing, 2007.',
+          link: 'static/publications/icip07-face.pdf',
+          extras: [
+
+          ],
+          year: '2007'
+        },
+        {
+          name: 'The Function Space of an Activity',
+          note: 'A. Veeraraghavan, R. Chellappa, A. Roy-Chowdhury, IEEE Computer Vision and Pattern Recognition, 2006.',
+          link: 'static/publications/cvpr06.pdf',
           extras: [
 
           ],
           year: '2006'
         },
         {
-          name: '',
-          note: '',
-          link: 'static/publications/',
+          name: 'A Multi-Terminal Model-Based Video Compression Algorithm',
+          note: 'B. Song, A. Roy-Chowdhury, E. Tuncel, IEEE Intl. Conf. on Image Processing, 2006.',
+          link: 'static/publications/icip06-distributed.pdf',
+          extras: [
+
+          ],
+          year: '2006'
+        },
+        {
+          name: 'Towards A Multi-Terminal Video Compression Algorithm Using Epipolar Geometry',
+          note: 'B. Song, O. Bursalioglu, E. Tuncel, A. Roy-Chowdhury, IEEE Intl. Conf. on Acoustics, Speech and Signal Processing, 2006. (Best Student Paper Award)',
+          link: 'static/publications/icassp06.pdf',
+          extras: [
+
+          ],
+          year: '2006'
+        },
+        {
+          name: 'Matching Shape Sequences in Video with Applications in Human Motion Analysis',
+          note: 'A. Veeraraghavan, A. Roy-Chowdhury, R. Chellappa, IEEE Trans. on Pattern Analysis and Machine Intelligence, pp. 1896-1909, December, 2005.',
+          link: 'static/publications/Comp_Shape_Seq_final.pdf',
           extras: [
 
           ],
           year: '2005'
         },
         {
-          name: '',
-          note: '',
-          link: 'static/publications/',
+          name: '"Shape Activity" : A Continuous State HMM for Moving/Deforming Shapes with Application to Abnormal Activity Detection',
+          note: 'N. Vaswani, A. Roy-Chowdhury, R. Chellappa, IEEE Trans. on Image Processing, pp. 1603-1616, October, 2005.',
+          link: 'static/publications/tip_activity.pdf',
+          extras: [
+
+          ],
+          year: '2005'
+        },
+        {
+          name: 'Statistical Bias in 3D Reconstruction from A Monocular Video',
+          note: 'Amit K. Roy-Chowdhury, R. Chellappa, IEEE Trans. on Image Processing, pp. 1057-1062, August, 2005.',
+          link: 'static/publications/bias_pap.pdf',
+          extras: [
+
+          ],
+          year: '2005'
+        },
+        {
+          name: 'Integrating the Effects of Motion, Illumination and Structure in Video Sequences',
+          note: 'Y. Xu, A. Roy-Chowdhury. IEEE Intl. Conf. on Computer Vision, 2005.',
+          link: 'static/publications/iccv05.pdf',
+          extras: [
+
+          ],
+          year: '2005'
+        },
+        {
+          name: 'A Measure of Deformability of Shapes, With Applications to Human Motion Analysis',
+          note: 'A. Roy-Chowdhury. IEEE Computer Vision and Pattern Recognition, 2005.',
+          link: 'static/publications/cvpr05.pdf',
+          extras: [
+
+          ],
+          year: '2005'
+        },
+        {
+          name: '3D Face Modeling From Monocular Video Sequences',
+          note: 'A. Roy-Chowdhury, R. Chellappa, H. Gupta, Face Processing: Advanced Modeling and Methods (Eds. R.Chellappa and W.Zhao), Academic Press, 2005.',
+          link: 'static/publications/face-book-chapter.pdf',
+          extras: [
+
+          ],
+          year: '2005'
+        },
+        {
+          name: 'Statistics in Computer Vision and Image Processing',
+          note: 'R. Chellappa, A Roy-Chowdhury, Encyclopedia of Statistical Sciences, 2nd ed., Vol. 2, (S. Kotz et al., eds.), John Wiley & Sons, Hoboken, pp. 1164-1173, 2005.',
+          link: 'static/publications/ess.pdf',
+          extras: [
+
+          ],
+          year: '2005'
+        },
+        {
+          name: 'Identification of Humans Using Gait',
+          note: 'A. Kale, A.N. Rajagopalan, A. Sunderesan, N. Cuntoor, A. Roy-Chowdhury, V. Krueger, R. Chellappa, IEEE Trans. on Image Processing, pp. 1163-1173, Sept. 2004.',
+          link: 'static/publications/iptrans_gait.pdf',
+          extras: [
+
+          ],
+          year: '2004'
+        },
+        {
+          name: 'An Information Theoretic Criterion for Evaluating the Quality of 3D Reconstructions from Video',
+          note: 'Amit K. Roy-Chowdhury, R. Chellappa, IEEE Trans. on Image Processing, pp. 960-973, July 2004.',
+          link: 'static/publications/iptrans04_info.pdf',
+          extras: [
+
+          ],
+          year: '2004'
+        },
+        {
+          name: 'Wide Baseline Image Registration with Application to 3D Face Modeling',
+          note: 'Amit K. Roy-Chowdhury, R. Chellappa, Trish Keaton, IEEE Transactions on Multimedia, pp. 423-434, June 2004.',
+          link: 'static/publications/mm_trans.pdf',
+          extras: [
+
+          ],
+          year: '2004'
+        },
+        {
+          name: 'Role of Shape and Kinematics in Human Movement Analysis',
+          note: 'A. Veeraraghavan, A. Roy-Chowdhury, R. Chellappa. IEEE Computer Vision and Pattern Recognition, 2004.',
+          link: 'static/publications/cvpr04.pdf',
+          extras: [
+
+          ],
+          year: '2004'
+        },
+        {
+          name: 'Multiple View Tracking of Human Motion Modeled by Kinematic Chains',
+          note: 'A. Sundaresan, A. Roy-Chowdhury, R. Chellappa, IEEE Int. Conf. on Image Processing, 2004.',
+          link: 'static/publications/kinematic-model.pdf',
+          extras: [
+
+          ],
+          year: '2004'
+        },
+        {
+          name: 'A System Identification Approach for Video-Based Face Recognition',
+          note: 'G. Aggarwal, Amit K. Roy-Chowdhury, R. Chellappa. International Conference on Pattern Recognition, 2004.',
+          link: 'static/publications/icpr04.pdf',
           extras: [
 
           ],
