@@ -4,6 +4,7 @@ import Home from '@/components/Home'
 import Data from '@/components/Data'
 import Publications from '@/components/Publications'
 import PeopleHome from '@/components/PeopleHome'
+import Amit from '@/components/Amit'
 
 Vue.use(Router)
 
@@ -28,6 +29,11 @@ export default new Router({
       path: '/people',
       name: 'PeopleHome',
       component: PeopleHome
+    },
+    {
+      path: '/amit',
+      name: 'Amit',
+      component: Amit
     }
   ],
   mode: 'history'
