@@ -28,6 +28,9 @@
             </div>
         </div>
 
+        <br/>
+        <hr />
+
         <div class="container row">
             <div class="col-md-6 dataset">
                 <h2>Camera Network Tracking Dataset (CamNeT)</h2>
@@ -48,6 +51,9 @@
                 </p>
             </div>
         </div>
+
+        <br />
+        <hr />
 
         <div class="container row">
             <div class="col-md-6 dataset">

@@ -32,12 +32,14 @@
               <ul class="list-group">
                 <li class="list-group-item" v-for="a in articles" :key="a.name">
                   <span class="badge">Published in {{a.year}}</span>
-                  <a :href="a.link">
-                    <h3>{{a.name}}</h3>
+                    <h3><a :href="a.link">{{a.name}}</a>
+                      <small>
+                        <span v-if="a.extras !== undefined"><a class v-for="extra in a.extras" :href="extra.path" :key="extra.path">[{{extra.name}}]</a></span>
+                      </small>
+                    </h3>
                     <p><small>{{a.note}}</small></p>
-                  </a>
                   <div class="extraContainer" v-if="a.extras !== undefined">
-                    <a class="btn btn-primary" v-for="extra in a.extras" :href="extra.path" :key="extra.path">{{extra.name}}</a>
+                    
                   </div>
                 </li>
               </ul>
