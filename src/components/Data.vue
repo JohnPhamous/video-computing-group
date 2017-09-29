@@ -29,7 +29,7 @@
         </div>
 
         <br/>
-        <hr />
+        <hr class="hr-blue" />
 
         <div class="container row">
             <div class="col-md-6 dataset">
@@ -53,7 +53,7 @@
         </div>
 
         <br />
-        <hr />
+        <hr class="hr-blue" />
 
         <div class="container row">
             <div class="col-md-6 dataset">

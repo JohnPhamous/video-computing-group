@@ -125,6 +125,16 @@ hr {
     margin-bottom: 20px;
 }
 
+.hr-blue {
+    color: #234674;
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #234674;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
 .footer {
     position: relative;
     width: 100%;
