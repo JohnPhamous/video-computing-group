@@ -60,6 +60,30 @@ export default {
         {
           name: 'Wide Area Scene Analysis in Vision Network',
           link: '/WideArea'
+        },
+        {
+          name: 'Activity Recognition and Prediction',
+          link: '/ActivityRP'
+        },
+        {
+          name: 'Situational Awareness Under Constraint Resources',
+          link: '/SituationalAwareness'
+        },
+        {
+          name: 'Face Tracking and Recognition',
+          link: '/FaceTR'
+        },
+        {
+          name: 'Biological Image Analysis',
+          link: '/BiologicalIA'
+        },
+        {
+          name: 'VideoWeb: A Video Network Lab',
+          link: '/VideoWeb'
+        },
+        {
+          name: 'Multi-terminal Video Compression',
+          link: '/MTVideo'
         }
       ]
     }

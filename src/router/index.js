@@ -8,6 +8,12 @@ import Amit from '@/components/Amit'
 
 import HumanRobot from '@/components/Research/HumanRobots'
 import WideArea from '@/components/Research/WideArea'
+import ActivityRP from '@/components/Research/ActivityRP'
+import SituationalAwareness from '@/components/Research/SituationalAwareness'
+import FaceTR from '@/components/Research/FaceTR'
+import BiologicalIA from '@/components/Research/BiologicalIA'
+import VideoWeb from '@/components/Research/VideoWeb'
+import MTVideo from '@/components/Research/MTVideo'
 
 Vue.use(Router)
 
@@ -47,6 +53,32 @@ export default new Router({
       path: '/WideArea',
       name: 'Wide Area',
       component: WideArea
+    },
+    {
+      path: '/ActivityRP',
+      name: 'Activity Recognition and Prediction',
+      component: ActivityRP
+    },
+    {
+      path: '/SituationalAwareness',
+      name: 'Situational Awareness',
+      component: SituationalAwareness
+    },
+    {
+      path: '/FaceTR',
+      component: FaceTR
+    },
+    {
+      path: '/BiologicalIA',
+      component: BiologicalIA
+    },
+    {
+      path: '/VideoWeb',
+      component: VideoWeb
+    },
+    {
+      path: '/MTVideo',
+      component: MTVideo
     }
   ],
   mode: 'history'
