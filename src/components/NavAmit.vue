@@ -78,10 +78,6 @@ export default {
           link: '/BiologicalIA'
         },
         {
-          name: 'VideoWeb: A Video Network Lab',
-          link: '/VideoWeb'
-        },
-        {
           name: 'Multi-terminal Video Compression',
           link: '/MTVideo'
         }

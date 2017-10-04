@@ -121,6 +121,16 @@ hr {
     height: 1px;
     border: 0;
     border-top: 1px solid #ffc800;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.hr-blue {
+    color: #234674;
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #234674;
     margin-top: 10px;
     margin-bottom: 20px;
 }
@@ -182,4 +192,13 @@ hr {
   .personContainer {
       margin-bottom: 20px;
       height: 175px;
+  }
+
+  .research-img {
+      width: 80%;
+      margin-bottom: 10px;
+      margin-top: 10px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
   }
