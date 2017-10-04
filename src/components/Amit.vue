@@ -20,6 +20,9 @@
                   <div class="col-md-6">
                       <p><strong>Email</strong>: <a href="mailto:amitrc@ee.ucr.edu">amitrc@ee.ucr.edu</a></p>
                   </div>
+                  <div class="col-md-12">
+                      <p><strong>Calendar</strong>: <a href="https://exchange.engr.ucr.edu/owa/calendar/d2383983d21c431c88e35b4c56929342@ee.ucr.edu/664d22dea30e4cbe833cc229f2961a444807192837336123402/calendar.html">Outlook Exchange</a></p>
+                  </div>
               </div>
           </div>
           <div class="col-md-5">

@@ -20,15 +20,9 @@
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Research Projects<span class="caret"></span></a>
               <ul class="dropdown-menu">
-                <li><a href="#">Overview</a></li>
-                <li><a href="#">Human Robot Vision Network</a></li>
-                <li><a href="#">Wide Area Scene Analysis in Vision Network</a></li>
-                <li><a href="#">Activity Recognition and Prediction</a></li>
-                <li><a href="#">Situational Awareness Under Resource Constraints</a></li>
-                <li><a href="#">Face Tracking and Recognition</a></li>
-                <li><a href="#">Biological Image Analysis</a></li>
-                <li><a href="#">VideoWeb: A Video Network Lab</a></li>
-                <li><a href="#">Multi-Terminal Video Compression</a></li>
+                <li v-for="pub in publications" :key="pub.name">
+                  <router-link :to="pub.link">{{ pub.name }}</router-link>
+                </li>
               </ul>
             </li>
           </ul>
@@ -57,7 +51,17 @@ export default {
       {
         name: 'People',
         link: '/people'
-      }]
+      }],
+      publications: [
+        {
+          name: 'Human Robot Vision Network',
+          link: '/HumanRobots'
+        },
+        {
+          name: 'Wide Area Scene Analysis in Vision Network',
+          link: '/WideArea'
+        }
+      ]
     }
   }
 }

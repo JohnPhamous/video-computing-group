@@ -6,6 +6,9 @@ import Publications from '@/components/Publications'
 import PeopleHome from '@/components/PeopleHome'
 import Amit from '@/components/Amit'
 
+import HumanRobot from '@/components/Research/HumanRobots'
+import WideArea from '@/components/Research/WideArea'
+
 Vue.use(Router)
 
 export default new Router({
@@ -34,6 +37,16 @@ export default new Router({
       path: '/amit',
       name: 'Amit',
       component: Amit
+    },
+    {
+      path: '/HumanRobots',
+      name: 'Human Robots',
+      component: HumanRobot
+    },
+    {
+      path: '/WideArea',
+      name: 'Wide Area',
+      component: WideArea
     }
   ],
   mode: 'history'
