@@ -14,7 +14,6 @@
                 <div class="col-md-9">
                   <h4><strong>{{member.name}}</strong></h4>
                   <p><strong>{{member.position}}</strong></p>
-                  <p v-if="member.contact.mobile.length > 0" disabled><span class="fa fa-phone"></span> {{member.contact.mobile}}</p>
                 </div>
                 <div class="col-md-12 personActions">
                   <a v-if="member.contact.email.length > 0" :href="'mailto:' + member.contact.email"  class="btn btn-primary btn-sm"><span class="fa fa-envelope-o"></span> Email</a>
@@ -37,7 +36,6 @@
                 <div class="col-md-9">
                   <h4><strong>{{member.name}}</strong></h4>
                   <p><strong>{{member.position}}</strong></p>
-                  <p v-if="member.contact.mobile.length > 0" disabled><span class="fa fa-phone"></span> {{member.contact.mobile}}</p>
                 </div>
                 <div class="col-md-12 personActions">
                   <a v-if="member.contact.email.length > 0" :href="'mailto:' + member.contact.email"  class="btn btn-primary btn-sm"><span class="fa fa-envelope-o"></span> Email</a>
@@ -118,50 +116,6 @@ export default {
           }
         },
         {
-          name: 'Akash Gupta',
-          position: 'PhD Candidate, Electrical and Computer Engineering',
-          image: 'Akash.jpg',
-          website: '',
-          contact: {
-            email: '',
-            mobile: '',
-            website: ''
-          }
-        },
-        {
-          name: 'Sasha Li',
-          position: '',
-          image: 'shasha.jpg',
-          website: '',
-          contact: {
-            email: '',
-            mobile: '',
-            website: ''
-          }
-        },
-        {
-          name: 'Shuyue Lan',
-          position: 'PhD Student, Electrical and Computer Engineering',
-          image: 'shuyue.jpg',
-          website: '',
-          contact: {
-            email: 'slan001@ucr.edu',
-            mobile: '',
-            website: 'http://www.ee.ucr.edu/~slan/'
-          }
-        },
-        {
-          name: 'Amit Roy-sssChowdhury',
-          position: 'PhD Candidate, Electrical and Computer Engineering',
-          image: 'tahmida2.jpg',
-          website: '',
-          contact: {
-            email: 'tmahm001@ucr.edu',
-            mobile: '',
-            website: 'https://sites.google.com/site/tahmidamahmud/'
-          }
-        },
-        {
           name: 'Niluthpol Mithun',
           position: 'PhD Student, Electrical and Computer Engineering',
           image: 'Mithun.jpg',
@@ -184,6 +138,17 @@ export default {
           }
         },
         {
+          name: 'Tahmida B. Mahmud',
+          position: 'PhD Candidate, Electrical and Computer Engineering',
+          image: 'tahmida2.jpg',
+          website: '',
+          contact: {
+            email: 'tmahm001@ucr.edu',
+            mobile: '',
+            website: 'http://www.ece.ucr.edu/~tmahmud/'
+          }
+        },
+        {
           name: 'Sujoy Paul',
           position: 'PhD Candiate, Electrical and Computer Engineering',
           image: 'sujoy.jpg',
@@ -192,6 +157,17 @@ export default {
             email: 'supaul@ece.ucr.edu',
             mobile: '',
             website: 'http://ee.ucr.edu/~supaul/'
+          }
+        },
+        {
+          name: 'Shuyue Lan',
+          position: 'PhD Student, Electrical and Computer Engineering',
+          image: 'shuyue.jpg',
+          website: '',
+          contact: {
+            email: 'slan001@ucr.edu',
+            mobile: '',
+            website: 'http://www.ee.ucr.edu/~slan/'
           }
         },
         {
@@ -204,7 +180,29 @@ export default {
             mobile: '',
             website: ''
           }
-        }
+        },
+        {
+          name: 'Sasha Li',
+          position: '',
+          image: 'shasha.jpg',
+          website: '',
+          contact: {
+            email: '',
+            mobile: '',
+            website: ''
+          }
+        },
+        {
+          name: 'Akash Gupta',
+          position: 'Masters Student, Electrical and Computer Engineering',
+          image: 'Akash.jpg',
+          website: '',
+          contact: {
+            email: '',
+            mobile: '',
+            website: ''
+          }
+        },    
       ],
     }
   }

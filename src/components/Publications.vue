@@ -24,6 +24,9 @@
               </ul>
             </div>
 
+            <div class="alert alert-info">
+              A complete list of articles by publication category is available <a href="../../static/publications/publications.pdf"><strong>here</strong></a>.
+            </div>
             <div class="panel panel-primary">
               <div class="panel-heading">
                 <h3 class="panel-title">Publications</h3> 
@@ -66,7 +69,7 @@
             
             <div class="panel panel-primary">
               <div class="panel-heading">
-                <h3 class="panel-title">Publications</h3> 
+                <h3 class="panel-title">PhD Thesis</h3> 
               </div> 
               
               <ul class="list-group">

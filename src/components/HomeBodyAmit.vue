@@ -14,7 +14,7 @@
               Open Positions
             </h3>
             <p>
-              If you are interested in a position feel free to contact Dr. Amit Chowdhury
+              If you are interested in a position feel free to contact Dr. Amit Roy-Chowdhury
             </p>
             <ul>
               <li>Undergraduates</li>
