@@ -26,7 +26,7 @@ export default {
     'AmitHomeBody': AmitHomeBody,
     'NewsAmit': NewsAmit,
     'PromoImagesAmit': PromoImagesAmit,
-    'Sponsors': Sponsors
+    'Sponsors': Sponsors,
   },
   name: 'AmitHeader'
 }

@@ -20,7 +20,6 @@ npm run build --report
 
 # TODOS
 
-* Scrolling news that matches what was on the old one
 * Sort publications by year (tabular)
 * Add overview page for research projects
 * Research themes should be initially hidden, clicking on them will expand
