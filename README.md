@@ -22,7 +22,5 @@ npm run build --report
 
 * Scrolling news that matches what was on the old one
 * Sort publications by year (tabular)
-* VideoWeb research project is missing
 * Add overview page for research projects
 * Research themes should be initially hidden, clicking on them will expand
-* Add Amit's teaching
