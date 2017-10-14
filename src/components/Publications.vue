@@ -8,13 +8,16 @@
           <div class="col-md-12">
             <p><small></small></p>
             <div class="alert alert-danger" role="alert">The contributing authors include the documents contained in these directories as a means to ensure timely dissemination of scholarly and technical work on a non-commercial basis. Copyright and all rights therein are maintained by the authors or by other copyright holders, notwithstanding that they have offered their works here electronically. It is understood that all persons copying this information will adhere to the terms and constraints invoked by each author's copyright. These works may not be reposted without the explicit permission of the copyright holder.</div>
-            
+            <div class="alert alert-info">
+              A complete list of articles by publication category is available <a href="../../static/publications/publications.pdf"><strong>here</strong></a>.
+            </div>
+
             <div class="panel panel-primary">
               <div class="panel-heading">
-                <h3 class="panel-title">Books and Edited Books</h3>
+                <h3 class="panel-title">Books and Edited Books <span @click="showBooks = !showBooks" class="fa fa-bars toggle"></span></h3>
               </div> 
               
-              <ul class="list-group">
+              <ul v-show="showBooks" class="list-group">
                 <li class="list-group-item" v-for="book in books" :key="book.name">
                   <a :href="book.link">
                     <h3>{{book.name}}</h3>
@@ -23,16 +26,14 @@
                 </li>
               </ul>
             </div>
-
-            <div class="alert alert-info">
-              A complete list of articles by publication category is available <a href="../../static/publications/publications.pdf"><strong>here</strong></a>.
-            </div>
+            
             <div class="panel panel-primary">
               <div class="panel-heading">
-                <h3 class="panel-title">Publications</h3> 
+                <h3 class="panel-title">Publications <span @click="showPublications = !showPublications" class="fa fa-bars toggle"></span></h3>
+                
               </div> 
               
-              <ul class="list-group">
+              <ul v-show="showPublications" class="list-group">
                 <li class="list-group-item" v-for="a in articles" :key="a.name">
                   <span class="badge">Published in {{a.year}}</span>
                     <h3><a :href="a.link">{{a.name}}</a>
@@ -50,10 +51,10 @@
 
             <div class="panel panel-primary">
               <div class="panel-heading">
-                <h3 class="panel-title">Magazines</h3> 
+                <h3 class="panel-title">Magazines <span @click="showMagazines = !showMagazines" class="fa fa-bars toggle"></span></h3> 
               </div> 
               
-              <ul class="list-group">
+              <ul v-show="showMagazines" class="list-group">
                 <li class="list-group-item" v-for="a in magazines" :key="a.name">
                   <span class="badge">Published in {{a.year}}</span>
                   <a :href="a.link">
@@ -69,10 +70,10 @@
             
             <div class="panel panel-primary">
               <div class="panel-heading">
-                <h3 class="panel-title">PhD Thesis</h3> 
+                <h3 class="panel-title">PhD Thesis <span @click="showThesis = !showThesis" class="fa fa-bars toggle"></span></h3> 
               </div> 
               
-              <ul class="list-group">
+              <ul v-show="showThesis" class="list-group">
                 <li class="list-group-item" v-for="a in papers" :key="a.name">
                   <span class="badge">Published in {{a.year}}</span>
                   <a :href="a.link">
@@ -98,6 +99,10 @@ export default {
   name: 'publications',
   data: function() {
     return {
+      showPublications: false,
+      showBooks: false,
+      showMagazines: false,
+      showThesis: false,
       books: [
         {
           name: 'Camera Networks: The Acquisition and Analysis of Videos Over Wide Areas',
@@ -1196,4 +1201,13 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+  .toggle {
+    cursor: pointer;
+    right: 5%;
+    position: absolute;
+  }
+</style>
+
 
