@@ -49,7 +49,7 @@
             <h2>Teachings</h2>
 
             <ul>
-                <li :key="t.name" v-for="t in teachings">{{ t.number}}</li>
+                <li :key="t.name" v-for="t in teachings">{{ t.number }} - {{ t.name }} ({{ t.type }})</li>
             </ul>
         </div>
       </div>
