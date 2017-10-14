@@ -68,6 +68,44 @@
             </div>
           </div>
         </div>
+        <div class="container row">
+          <div class="col-md-12 text-center">
+            <h2>Visiting Scholars</h2>
+          </div>
+          <div class="col-md-6 personContainer" v-for="member in visitors" :key="member.name">
+            <div class="row">
+              <div class="person" >
+                <div class="col-md-3" :key="member.name">
+                  <img :src="'static/img/people/' + member.image" class="img-responsive"/>
+                </div>
+                <div class="col-md-9">
+                  <h4><strong>{{member.name}}</strong></h4>
+                  <p><strong>{{member.position}}</strong></p>
+                  <p v-if="member.contact.mobile.length > 0" disabled><span class="fa fa-phone"></span> {{member.contact.mobile}}</p>
+                </div>
+                <div class="col-md-12 personActions">
+                  <a v-if="member.contact.email.length > 0" :href="'mailto:' + member.contact.email"  class="btn btn-primary btn-sm"><span class="fa fa-envelope-o"></span> Email</a>
+                  <a v-if="member.contact.website.length > 0" :href="member.contact.website"  class="btn btn-primary btn-sm"><span class="fa fa-globe"></span> Website</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container row">
+          <div class="col-md-12 text-center">
+            <h2>Former Students and Research Collaborators</h2>
+          </div>
+          <ul>
+            <li v-for="a in alumni" :key="a.name">
+              <strong>{{ a.name }}</strong> ({{ a.degree }}) <br>
+              {{ a.position }} <br>
+              <span v-if="a.thesis.length > 0">
+                Thesis: <a v-if="a.thesisLink.length > 0" :href="'static/thesis/' + a.thesisLink">{{ a.thesis }}</a>
+                        <span v-else>{{ a.thesis }}</span>
+              </span>
+            </li>
+          </ul>
+        </div>
       </div>
   </div>
 </template>
@@ -90,6 +128,148 @@ export default {
           }
         }
       ],
+      alumni: [
+        {
+          name: 'Katya Mkrtchyan',
+          position: 'Visiting Assistant Professor, Department of Computer Science, Pomona College',
+          degree: 'PhD 2016',
+          thesis: 'Video Bioinformatics with Applications in Cell Biology and Entomology',
+          thesisLink: ''
+        },
+        {
+          name: 'Mahmudul Hasan',
+          position: 'Currently at Comcast Labs',
+          degree: 'PhD 2016',
+          thesis: 'Online Activity Understanding and Labeling in Natural Videos',
+          thesisLink: 'thesis-hasan.pdf'
+        },
+        {
+          name: 'Shu Zhang',
+          position: 'Currently at Sony Research',
+          degree: 'PhD 2015',
+          thesis: 'Wide-Area Video Understanding: Tracking, Video Summarization and Algorithm-Platform Co-Design',
+          thesisLink: 'Shu Thesis.pdf'
+        },
+        {
+          name: 'Abir Das',
+          position: 'Postdoctoral Researcher, Computer Vision and Learning Group, Boston University',
+          degree: 'PhD 2015',
+          thesis: 'Active Learning in Multi-Camera Networks, With Applications in Person Re-Identification',
+          thesisLink: 'thesis-abir.pdf'
+        },
+        {
+          name: 'Ramya Srinivasan',
+          position: 'Currently at Fujitsu Lab, USA',
+          degree: 'PhD 2015',
+          thesis: 'Investigating the Role of Saliency for Face Recognition',
+          thesisLink: 'thesis-ramya.pdf'
+        },
+        {
+          name: 'Yingying Zhu',
+          position: 'Currently at Honda Research Institute',
+          degree: 'PhD 2014',
+          thesis: 'Towards Sparse Modeling of Multi-Object Interactions in Video',
+          thesisLink: 'thesis-yingying.pdf'
+        },
+        {
+          name: 'Nandita Nayak',
+          position: 'Currently at Konica Minolta Lab',
+          degree: 'PhD 2014',
+          thesis: 'Graphical Models for Wide-Area Activity Analysis in Continuous Videos',
+          thesisLink: 'Nandita_thesis.pdf'
+        },
+        {
+          name: 'Anirban Chakraborty',
+          position: 'Research Fellow, Department of Diagnostic Radiology, NUS, Singapore',
+          degree: 'PhD 2014',
+          thesis: 'Exploration of Contextual Relationships for Robust Video Analysis: Applications in Camera Networks, Bio-image Analysis and Activity Forecasting',
+          thesisLink: 'thesis-anirban.pdf'
+        },
+        {
+          name: 'Chong Ding',
+          position: 'Currently at HRL Lab, USA ',
+          degree: 'PhD 2013',
+          thesis: 'Coordinated Sensing in Intelligent Camera Networks',
+          thesisLink: 'thesis-chong.pdf'
+        },
+        {
+          name: 'Ahmed Tashrif Kamal',
+          position: 'Currently at Apple, USA',
+          degree: 'PhD 2013',
+          thesis: 'Information Weighted Consensus for Distributed Estimation in Vision Networks',
+          thesisLink: 'PhD_Dissertation_Ahmed_Kamal.pdf'
+        },
+        {
+          name: 'Min Liu',
+          position: 'Associate Prof. at Hunan University, China',
+          degree: 'PhD 2012',
+          thesis: 'Feature Extraction in Volumetric Bioimages',
+          thesisLink: 'thesis-Min.pdf'
+        },
+        {
+          name: 'Antony Lam',
+          position: 'Asst. Prof at Saitama University, Japan.',
+          degree: 'PhD 2010',
+          thesis: 'Learning Ranking Functions for Video Search on the Web (co-advised with Prof. C. Shelton)',
+          thesisLink: ''
+        },
+        {
+          name: 'Ricky Sethi',
+          position: 'Asst. Prof. at Fitchburg State University',
+          degree: 'PhD 2009',
+          thesis: 'A Physics-Based Neurobiologically-Inspired Stochastic Framework for Activity Recognition',
+          thesisLink: 'thesis-rick.pdf'
+        },
+        {
+          name: 'Bi Song',
+          position: 'Currently at Sony Research USA',
+          degree: 'PhD 2009',
+          thesis: 'Scene Analysis, Control and Communication in Distributed Camera Networks',
+          thesisLink: 'Thesis_BiSong.pdf'
+        },
+        {
+          name: 'Yilei Xu',
+          position: 'Currently at Nokia',
+          degree: 'PhD 2008',
+          thesis: 'A Theoretical Analysis of Image Appearance Models With Applications in Face Recognition',
+          thesisLink: 'Yilei-Final-Thesis.pdf'
+        },
+        {
+          name: 'Elliot Staudt',
+          position: 'Currently at Mayachitra Inc.',
+          degree: 'MS 2015',
+          thesis: '',
+          thesisLink: ''
+        },
+        {
+          name: 'Utkarsh Gaur',
+          position: 'Currently at Bisque Lab, UCSB',
+          degree: 'MS 2010',
+          thesis: '',
+          thesisLink: ''
+        },
+        {
+          name: 'Ting Yeuh Jeng',
+          position: '',
+          degree: 'MS 2009',
+          thesis: '',
+          thesisLink: ''
+        },
+        {
+          name: 'Cristian Soto',
+          position: '',
+          degree: 'MS Student 2007-2008',
+          thesis: '',
+          thesisLink: ''
+        },
+        {
+          name: 'Luis Gonzalez-Argueta',
+          position: '',
+          degree: 'MS Student 2007-2009',
+          thesis: '',
+          thesisLink: ''
+        }
+      ],
       undergrads: [
         {
           name: 'Cody Simons',
@@ -98,6 +278,30 @@ export default {
           website: '',
           contact: {
             email: 'csimo005@ucr.edu',
+            mobile: '',
+            website: ''
+          }
+        }
+      ],
+      visitors: [
+        {
+          name: 'Niki Martinel',
+          position: 'University of Udine, Italy',
+          image: 'Niki.jpg',
+          website: 'http://web.uniud.it/didattica/servizi_studenti/international_students_service/university.htm',
+          contact: {
+            email: '',
+            mobile: '',
+            website: ''
+          }
+        },
+        {
+          name: 'Amran Bhuiyan',
+          position: 'Istituto Italiano di Tecnologia, Italy',
+          image: 'Amran.jpg',
+          website: '',
+          contact: {
+            email: '',
             mobile: '',
             website: ''
           }
@@ -208,4 +412,10 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+  li {
+    margin-bottom: 20px;
+  }
+</style>
 
