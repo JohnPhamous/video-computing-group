@@ -19,7 +19,5 @@ npm run build --report
 ```
 
 # TODOS
-
-* Sort publications by year (tabular)
 * Add overview page for research projects
 * Research themes should be initially hidden, clicking on them will expand

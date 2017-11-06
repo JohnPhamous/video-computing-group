@@ -321,7 +321,7 @@ export default {
         },
         {
           name: 'Niluthpol Mithun',
-          position: 'PhD Student, Electrical and Computer Engineering',
+          position: 'PhD Candidate, Electrical and Computer Engineering',
           image: 'Mithun.jpg',
           website: '',
           contact: {
@@ -332,7 +332,7 @@ export default {
         },
         {
           name: 'Rameswar Panda',
-          position: 'PhD Student, Electrical and Computer Engineering',
+          position: 'PhD Candidate, Electrical and Computer Engineering',
           image: 'Panda.png',
           website: '',
           contact: {
@@ -342,7 +342,7 @@ export default {
           }
         },
         {
-          name: 'Tahmida B. Mahmud',
+          name: 'Tahmida Mahmud',
           position: 'PhD Candidate, Electrical and Computer Engineering',
           image: 'tahmida2.jpg',
           website: '',
@@ -354,7 +354,7 @@ export default {
         },
         {
           name: 'Sujoy Paul',
-          position: 'PhD Candiate, Electrical and Computer Engineering',
+          position: 'PhD Candidate, Electrical and Computer Engineering',
           image: 'sujoy.jpg',
           website: '',
           contact: {
@@ -365,7 +365,7 @@ export default {
         },
         {
           name: 'Shuyue Lan',
-          position: 'PhD Student, Electrical and Computer Engineering',
+          position: 'PhD Candidate, Electrical and Computer Engineering',
           image: 'shuyue.jpg',
           website: '',
           contact: {
@@ -387,7 +387,7 @@ export default {
         },
         {
           name: 'Sasha Li',
-          position: '',
+          position: 'PhD Candidate, Electrical and Computer Engineering',
           image: 'shasha.jpg',
           website: '',
           contact: {
