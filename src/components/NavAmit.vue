@@ -23,6 +23,7 @@
                 <li v-for="pub in publications" :key="pub.name">
                   <router-link :to="pub.link">{{ pub.name }}</router-link>
                 </li>
+                <li><a href="http://vislab.ucr.edu/RESEARCH/Projects/VideoWeb/index.htm">VideoWeb: A Video Network Lab</a></li>
               </ul>
             </li>
           </ul>

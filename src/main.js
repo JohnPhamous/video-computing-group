@@ -8,16 +8,23 @@ import Header from './components/HeaderAmit'
 import Nav from './components/NavAmit'
 import Footer from './components/FooterAmit'
 
+import VueAwesomeSwiper from 'vue-awesome-swiper'
+import { swiper, swiperSlide } from 'vue-awesome-swiper'
+require('swiper/dist/css/swiper.css')
+
 Vue.component('Header', Header)
 Vue.component('Nav', Nav)
 Vue.component('Footer', Footer)
 
 Vue.config.productionTip = false
+Vue.use(VueAwesomeSwiper)
 
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
   router,
   template: '<App/>',
-  components: { App }
+  components: {
+    App
+  }
 })
