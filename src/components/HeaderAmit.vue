@@ -9,8 +9,6 @@
                 <div id="header-title" class="col-md-11 col-xs-10 inherit-height">
                     <p class="vc">
                         <span class="primary no-margin h2">Video Computing Group</span>
-                        <br/>
-                        Developing the Premier Computing Vision Algorithms
                     </p>
                 </div>
             </div>

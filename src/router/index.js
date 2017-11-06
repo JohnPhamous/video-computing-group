@@ -5,6 +5,7 @@ import Data from '@/components/Data'
 import Publications from '@/components/Publications'
 import PeopleHome from '@/components/PeopleHome'
 import Amit from '@/components/Amit'
+import Positions from '@/components/Positions'
 
 import HumanRobot from '@/components/Research/HumanRobots'
 import WideArea from '@/components/Research/WideArea'
@@ -14,6 +15,7 @@ import FaceTR from '@/components/Research/FaceTR'
 import BiologicalIA from '@/components/Research/BiologicalIA'
 import VideoWeb from '@/components/Research/VideoWeb'
 import MTVideo from '@/components/Research/MTVideo'
+
 
 Vue.use(Router)
 
@@ -79,6 +81,10 @@ export default new Router({
     {
       path: '/MTVideo',
       component: MTVideo
+    },
+    {
+      path: '/positions',
+      component: Positions
     }
   ],
   mode: 'history'

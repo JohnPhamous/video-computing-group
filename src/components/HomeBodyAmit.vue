@@ -14,13 +14,8 @@
               Open Positions
             </h3>
             <p>
-              If you are interested in a position feel free to contact Dr. Amit Roy-Chowdhury
+              The Video Computing Group is looking for highly motivated and talented graduate and undergraduate students. If interested, please check  <router-link to="positions">here</router-link> for more details. 
             </p>
-            <ul>
-              <li>Undergraduates</li>
-              <li>Graduates</li>
-              <li>Post-Doc</li>
-            </ul>
           </div>
         </div>
         <hr />
