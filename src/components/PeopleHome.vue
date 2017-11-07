@@ -131,7 +131,7 @@ export default {
       alumni: [
         {
           name: 'Katya Mkrtchyan',
-          position: 'Visiting Assistant Professor, Department of Computer Science, Pomona College',
+          position: 'Assistant Professor at Cal State Northridge',
           degree: 'PhD 2016',
           thesis: 'Video Bioinformatics with Applications in Cell Biology and Entomology',
           thesisLink: ''
@@ -145,7 +145,7 @@ export default {
         },
         {
           name: 'Shu Zhang',
-          position: 'Currently at Sony Research',
+          position: 'Currently at JD.com',
           degree: 'PhD 2015',
           thesis: 'Wide-Area Video Understanding: Tracking, Video Summarization and Algorithm-Platform Co-Design',
           thesisLink: 'Shu Thesis.pdf'
@@ -180,7 +180,7 @@ export default {
         },
         {
           name: 'Anirban Chakraborty',
-          position: 'Research Fellow, Department of Diagnostic Radiology, NUS, Singapore',
+          position: 'Assistant Professor at Indian Institute of Science',
           degree: 'PhD 2014',
           thesis: 'Exploration of Contextual Relationships for Robust Video Analysis: Applications in Camera Networks, Bio-image Analysis and Activity Forecasting',
           thesisLink: 'thesis-anirban.pdf'
