@@ -10,15 +10,65 @@
                </p>
               <hr/>
 
-              <h3>Face Tracking and Recognition in Video</h3>
-              <video class="research-img" width="25%" controls>
-                <source src="../../../static/img/research/CorridorDemo.mp4" type="video/mp4">
-              </video>
-              <p>
-                In this project, we have studied the problem of robust face tracking and recognition in the presence of large pose and illumination changes. First, we developed a theoretical model for understanding the effects of lighting, motion and shape in the process of image formation, bulding upon multilinear tensor algebra. This has led to the development of robust tracking of facial features and an analysis-by-synthesis framework for face recognition from video sequences.
-              </p>
+              <h3>Face Tracking and Recognition in Video  <button class="btn btn-primary" @click="showFace = !showFace">Toggle</button></h3>
+              <div v-show="showFace">
+                <video class="research-img" width="25%" controls>
+                  <source src="../../../static/img/research/CorridorDemo.mp4" type="video/mp4">
+                </video>
+                <p>
+                  In this project, we have studied the problem of robust face tracking and recognition in the presence of large pose and illumination changes. First, we developed a theoretical model for understanding the effects of lighting, motion and shape in the process of image formation, bulding upon multilinear tensor algebra. This has led to the development of robust tracking of facial features and an analysis-by-synthesis framework for face recognition from video sequences.
+                </p>
+
+                <h4><span class="publicationHeader">Sample Publications</span> <button class="btn btn-primary" @click="showFacePublications = !showFacePublications">Toggle</button></h4>
+
+                <ul class="list-group" v-show="showFacePublications">
+                    <li class="list-group-item" v-for="a in facePublications" :key="a.name">
+                    <a :href="a.link">
+                        <h5>{{a.name}}</h5>
+                        <p><small>{{a.note}}</small></p>
+                    </a>
+                    <div class="extraContainer" v-if="a.extras !== undefined">
+                        <a class="btn btn-primary" v-for="extra in a.extras" :href="extra.path" :key="extra.path">{{extra.name}}</a>
+                    </div>
+                    </li>
+                </ul>
+              </div>
           </div>
         </div>
       </div>
    </div>
 </template>
+
+<script>
+export default {
+  data: function () {
+    return {
+      showFace: false,
+      showFacePublications: false,
+      facePublications: [
+        {
+          name: 'Computerized Face Recognition in Renaissance Portrait Art',
+          note: 'R. Srinivasan, C. Rudolph, and A. K. Roy-Chowdhury, Signal Processing Magazine. 2015.',
+          link: 'static/publications/spm2015.pdf',
+          extras: [
+            {
+              name: 'Supplmental Material',
+              path: 'static/publications/SPM2015_SM.pdf'
+            }
+          ],
+          year: '2015'
+        },
+        {
+          name: 'Recognizing the Royals - Leveraging Computerized Face Recognition for Identifying Subjects in Ancient Artworks',
+          note: 'R. Srinivasan, A. Roy-Chowdhury, C. Rudolph, J. Kohl, ACM Intl. Conf. on Multimedia, 2013.',
+          link: 'static/publications/acm-mm2013.pdf',
+          extras: [
+
+          ],
+          year: '2013'
+        },
+      ]
+    }
+  }
+}
+</script>
