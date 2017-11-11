@@ -29,7 +29,7 @@
             
             <div class="panel panel-primary">
               <div class="panel-heading">
-                <h3 class="panel-title">Publications <span @click="showPublications = !showPublications" class="fa fa-bars toggle"></span></h3>
+                <h3 class="panel-title">Publications <span @click="this.showPublications = !this.showPublications" class="fa fa-bars toggle"></span></h3>
                 
               </div> 
               
@@ -175,12 +175,12 @@ export default {
           link: 'static/publications/cvpr2017summ.pdf',
           year: '2017'
         },
-        {
-          name: 'Non-Uniform Subset Selection for Active Learning in Structured Data',
-          note: 'S. Paul, J. H. Bappy, A. Roy-Chowdhury, IEEE Conf. on Computer Vision and Pattern Recognition, 2017.',
-          link: 'static/publications/cvpr2017subset.pdf',
-          year: '2017'
-        },
+      {
+        name: 'Non-Uniform Subset Selection for Active Learning in Structured Data',
+        note: 'S. Paul, J. H. Bappy, A. Roy-Chowdhury, IEEE Conf. on Computer Vision and Pattern Recognition, 2017.',
+        link: 'static/publications/cvpr2017subset.pdf',
+        year: '2017'
+      },
         {
           name: 'The Impact of Typicality for Informative Representative Selection',
           note: 'J. H. Bappy, S. Paul, E. Tuncel and A. Roy-Chowdhury, IEEE Conf. on Computer Vision and Pattern Recognition, 2017.',
@@ -477,7 +477,6 @@ export default {
           note: 'A. Morye, C. Ding, J. A. Farrell, A. Roy-Chowdhury, IEEE Trans. on Control Systems Technology, 2014.',
           link: 'static/publications/akshay_tcst.pdf',
           extras: [
-            
           ],
           year: '2014'
         },
