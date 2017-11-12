@@ -27,62 +27,274 @@
               </ul>
             </div>
             
-            <div class="panel panel-primary">
+            <h2>Publications</h2>
+            
+            <div class="panel panel-info">
               <div class="panel-heading">
-                <h3 class="panel-title">Publications <span @click="this.showPublications = !this.showPublications" class="fa fa-bars toggle"></span></h3>
-                
+                <h3 class="panel-title">2017 <span @click="showPublications2017 = !showPublications2017" class="fa fa-bars toggle"></span></h3>
               </div> 
               
-              <ul v-show="showPublications" class="list-group">
-                <li class="list-group-item" v-for="a in articles" :key="a.name">
-                  <span class="badge">Published in {{a.year}}</span>
-                    <h3><a :href="a.link">{{a.name}}</a>
-                      <small>
-                        <span v-if="a.extras !== undefined"><a class v-for="extra in a.extras" :href="extra.path" :key="extra.path">[{{extra.name}}]</a></span>
-                      </small>
-                    </h3>
-                    <p><small>{{a.note}}</small></p>
-                  <div class="extraContainer" v-if="a.extras !== undefined">
-                    
-                  </div>
+              <ul v-show="showPublications2017" class="list-group">
+                <li class="list-group-item" v-for="a in articles2017" :key="a.name">
+                  <h3><a :href="a.link">{{a.name}}</a>
+                    <small>
+                      <span v-if="a.extras !== undefined"><a class v-for="extra in a.extras" :href="extra.path" :key="extra.path">[{{extra.name}}]</a></span>
+                    </small>
+                  </h3>
+                  <p><small>{{a.note}}</small></p>
+                  <div class="extraContainer" v-if="a.extras !== undefined"></div>
                 </li>
               </ul>
             </div>
 
-            <div class="panel panel-primary">
+            <div class="panel panel-info">
               <div class="panel-heading">
-                <h3 class="panel-title">Magazines <span @click="showMagazines = !showMagazines" class="fa fa-bars toggle"></span></h3> 
+                <h3 class="panel-title">2016 <span @click="showPublications2016 = !showPublications2016" class="fa fa-bars toggle"></span></h3>
               </div> 
               
-              <ul v-show="showMagazines" class="list-group">
-                <li class="list-group-item" v-for="a in magazines" :key="a.name">
-                  <span class="badge">Published in {{a.year}}</span>
-                  <a :href="a.link">
-                    <h3>{{a.name}}</h3>
-                    <p><small>{{a.note}}</small></p>
-                  </a>
-                  <div class="extraContainer" v-if="a.extras !== undefined">
-                    <a class="btn btn-primary" v-for="extra in a.extras" :href="extra.path" :key="extra.path">{{extra.name}}</a>
-                  </div>
+              <ul v-show="showPublications2016" class="list-group">
+                <li class="list-group-item" v-for="a in articles2016" :key="a.name">
+                  <h3><a :href="a.link">{{a.name}}</a>
+                    <small>
+                      <span v-if="a.extras !== undefined"><a class v-for="extra in a.extras" :href="extra.path" :key="extra.path">[{{extra.name}}]</a></span>
+                    </small>
+                  </h3>
+                  <p><small>{{a.note}}</small></p>
+                  <div class="extraContainer" v-if="a.extras !== undefined"></div>
+                </li>
+              </ul>
+            </div>
+
+            <div class="panel panel-info">
+              <div class="panel-heading">
+                <h3 class="panel-title">2015 <span @click="showPublications2015 = !showPublications2015" class="fa fa-bars toggle"></span></h3>
+              </div> 
+              
+              <ul v-show="showPublications2015" class="list-group">
+                <li class="list-group-item" v-for="a in articles2015" :key="a.name">
+                  <h3><a :href="a.link">{{a.name}}</a>
+                    <small>
+                      <span v-if="a.extras !== undefined"><a class v-for="extra in a.extras" :href="extra.path" :key="extra.path">[{{extra.name}}]</a></span>
+                    </small>
+                  </h3>
+                  <p><small>{{a.note}}</small></p>
+                  <div class="extraContainer" v-if="a.extras !== undefined"></div>
+                </li>
+              </ul>
+            </div>
+
+            <div class="panel panel-info">
+              <div class="panel-heading">
+                <h3 class="panel-title">2014 <span @click="showPublications2014 = !showPublications2014" class="fa fa-bars toggle"></span></h3>
+              </div> 
+              
+              <ul v-show="showPublications2014" class="list-group">
+                <li class="list-group-item" v-for="a in articles2014" :key="a.name">
+                  <h3><a :href="a.link">{{a.name}}</a>
+                    <small>
+                      <span v-if="a.extras !== undefined"><a class v-for="extra in a.extras" :href="extra.path" :key="extra.path">[{{extra.name}}]</a></span>
+                    </small>
+                  </h3>
+                  <p><small>{{a.note}}</small></p>
+                  <div class="extraContainer" v-if="a.extras !== undefined"></div>
+                </li>
+              </ul>
+            </div>
+
+            <div class="panel panel-info">
+              <div class="panel-heading">
+                <h3 class="panel-title">2013 <span @click="showPublications2013 = !showPublications2013" class="fa fa-bars toggle"></span></h3>
+              </div> 
+              
+              <ul v-show="showPublications2013" class="list-group">
+                <li class="list-group-item" v-for="a in articles2013" :key="a.name">
+                  <h3><a :href="a.link">{{a.name}}</a>
+                    <small>
+                      <span v-if="a.extras !== undefined"><a class v-for="extra in a.extras" :href="extra.path" :key="extra.path">[{{extra.name}}]</a></span>
+                    </small>
+                  </h3>
+                  <p><small>{{a.note}}</small></p>
+                  <div class="extraContainer" v-if="a.extras !== undefined"></div>
+                </li>
+              </ul>
+            </div>
+
+            <div class="panel panel-info">
+              <div class="panel-heading">
+                <h3 class="panel-title">2012 <span @click="showPublications2012 = !showPublications2012" class="fa fa-bars toggle"></span></h3>
+              </div> 
+              
+              <ul v-show="showPublications2012" class="list-group">
+                <li class="list-group-item" v-for="a in articles2012" :key="a.name">
+                  <h3><a :href="a.link">{{a.name}}</a>
+                    <small>
+                      <span v-if="a.extras !== undefined"><a class v-for="extra in a.extras" :href="extra.path" :key="extra.path">[{{extra.name}}]</a></span>
+                    </small>
+                  </h3>
+                  <p><small>{{a.note}}</small></p>
+                  <div class="extraContainer" v-if="a.extras !== undefined"></div>
                 </li>
               </ul>
             </div>
             
-            <div class="panel panel-primary">
+            <div class="panel panel-info">
               <div class="panel-heading">
-                <h3 class="panel-title">PhD Thesis <span @click="showThesis = !showThesis" class="fa fa-bars toggle"></span></h3> 
+                <h3 class="panel-title">2011 <span @click="showPublications2011 = !showPublications2011" class="fa fa-bars toggle"></span></h3>
               </div> 
               
-              <ul v-show="showThesis" class="list-group">
-                <li class="list-group-item" v-for="a in papers" :key="a.name">
-                  <span class="badge">Published in {{a.year}}</span>
-                  <a :href="a.link">
-                    <h3>{{a.name}}</h3>
-                    <p><small>{{a.note}}</small></p>
-                  </a>
-                  <div class="extraContainer" v-if="a.extras !== undefined">
-                    <a class="btn btn-primary" v-for="extra in a.extras" :href="extra.path" :key="extra.path">{{extra.name}}</a>
-                  </div>
+              <ul v-show="showPublications2011" class="list-group">
+                <li class="list-group-item" v-for="a in articles2011" :key="a.name">
+                  <h3><a :href="a.link">{{a.name}}</a>
+                    <small>
+                      <span v-if="a.extras !== undefined"><a class v-for="extra in a.extras" :href="extra.path" :key="extra.path">[{{extra.name}}]</a></span>
+                    </small>
+                  </h3>
+                  <p><small>{{a.note}}</small></p>
+                  <div class="extraContainer" v-if="a.extras !== undefined"></div>
+                </li>
+              </ul>
+            </div>
+
+            <div class="panel panel-info">
+              <div class="panel-heading">
+                <h3 class="panel-title">2010 <span @click="showPublications2010 = !showPublications2010" class="fa fa-bars toggle"></span></h3>
+              </div> 
+              
+              <ul v-show="showPublications2010" class="list-group">
+                <li class="list-group-item" v-for="a in articles2010" :key="a.name">
+                  <h3><a :href="a.link">{{a.name}}</a>
+                    <small>
+                      <span v-if="a.extras !== undefined"><a class v-for="extra in a.extras" :href="extra.path" :key="extra.path">[{{extra.name}}]</a></span>
+                    </small>
+                  </h3>
+                  <p><small>{{a.note}}</small></p>
+                  <div class="extraContainer" v-if="a.extras !== undefined"></div>
+                </li>
+              </ul>
+            </div>
+
+            <div class="panel panel-info">
+              <div class="panel-heading">
+                <h3 class="panel-title">2009 <span @click="showPublications2009 = !showPublications2009" class="fa fa-bars toggle"></span></h3>
+              </div> 
+              
+              <ul v-show="showPublications2009" class="list-group">
+                <li class="list-group-item" v-for="a in articles2009" :key="a.name">
+                  <h3><a :href="a.link">{{a.name}}</a>
+                    <small>
+                      <span v-if="a.extras !== undefined"><a class v-for="extra in a.extras" :href="extra.path" :key="extra.path">[{{extra.name}}]</a></span>
+                    </small>
+                  </h3>
+                  <p><small>{{a.note}}</small></p>
+                  <div class="extraContainer" v-if="a.extras !== undefined"></div>
+                </li>
+              </ul>
+            </div>
+
+            <div class="panel panel-info">
+              <div class="panel-heading">
+                <h3 class="panel-title">2008 <span @click="showPublications2008 = !showPublications2008" class="fa fa-bars toggle"></span></h3>
+              </div> 
+              
+              <ul v-show="showPublications2008" class="list-group">
+                <li class="list-group-item" v-for="a in articles2008" :key="a.name">
+                  <h3><a :href="a.link">{{a.name}}</a>
+                    <small>
+                      <span v-if="a.extras !== undefined"><a class v-for="extra in a.extras" :href="extra.path" :key="extra.path">[{{extra.name}}]</a></span>
+                    </small>
+                  </h3>
+                  <p><small>{{a.note}}</small></p>
+                  <div class="extraContainer" v-if="a.extras !== undefined"></div>
+                </li>
+              </ul>
+            </div>
+
+            <div class="panel panel-info">
+              <div class="panel-heading">
+                <h3 class="panel-title">2007 <span @click="showPublications2007 = !showPublications2007" class="fa fa-bars toggle"></span></h3>
+              </div> 
+              
+              <ul v-show="showPublications2007" class="list-group">
+                <li class="list-group-item" v-for="a in articles2007" :key="a.name">
+                  <h3><a :href="a.link">{{a.name}}</a>
+                    <small>
+                      <span v-if="a.extras !== undefined"><a class v-for="extra in a.extras" :href="extra.path" :key="extra.path">[{{extra.name}}]</a></span>
+                    </small>
+                  </h3>
+                  <p><small>{{a.note}}</small></p>
+                  <div class="extraContainer" v-if="a.extras !== undefined"></div>
+                </li>
+              </ul>
+            </div>
+
+            <div class="panel panel-info">
+              <div class="panel-heading">
+                <h3 class="panel-title">2006 <span @click="showPublications2006 = !showPublications2006" class="fa fa-bars toggle"></span></h3>
+              </div> 
+              
+              <ul v-show="showPublications2006" class="list-group">
+                <li class="list-group-item" v-for="a in articles2006" :key="a.name">
+                  <h3><a :href="a.link">{{a.name}}</a>
+                    <small>
+                      <span v-if="a.extras !== undefined"><a class v-for="extra in a.extras" :href="extra.path" :key="extra.path">[{{extra.name}}]</a></span>
+                    </small>
+                  </h3>
+                  <p><small>{{a.note}}</small></p>
+                  <div class="extraContainer" v-if="a.extras !== undefined"></div>
+                </li>
+              </ul>
+            </div>
+
+            <div class="panel panel-info">
+              <div class="panel-heading">
+                <h3 class="panel-title">2005 <span @click="showPublications2005 = !showPublications2005" class="fa fa-bars toggle"></span></h3>
+              </div> 
+              
+              <ul v-show="showPublications2005" class="list-group">
+                <li class="list-group-item" v-for="a in articles2005" :key="a.name">
+                  <h3><a :href="a.link">{{a.name}}</a>
+                    <small>
+                      <span v-if="a.extras !== undefined"><a class v-for="extra in a.extras" :href="extra.path" :key="extra.path">[{{extra.name}}]</a></span>
+                    </small>
+                  </h3>
+                  <p><small>{{a.note}}</small></p>
+                  <div class="extraContainer" v-if="a.extras !== undefined"></div>
+                </li>
+              </ul>
+            </div>
+
+            <div class="panel panel-info">
+              <div class="panel-heading">
+                <h3 class="panel-title">2004 <span @click="showPublications2004 = !showPublications2004" class="fa fa-bars toggle"></span></h3>
+              </div> 
+              
+              <ul v-show="showPublications2004" class="list-group">
+                <li class="list-group-item" v-for="a in articles2004" :key="a.name">
+                  <h3><a :href="a.link">{{a.name}}</a>
+                    <small>
+                      <span v-if="a.extras !== undefined"><a class v-for="extra in a.extras" :href="extra.path" :key="extra.path">[{{extra.name}}]</a></span>
+                    </small>
+                  </h3>
+                  <p><small>{{a.note}}</small></p>
+                  <div class="extraContainer" v-if="a.extras !== undefined"></div>
+                </li>
+              </ul>
+            </div>
+
+            <div class="panel panel-info">
+              <div class="panel-heading">
+                <h3 class="panel-title">2003 <span @click="showPublications2003 = !showPublications2003" class="fa fa-bars toggle"></span></h3>
+              </div> 
+              
+              <ul v-show="showPublications2003" class="list-group">
+                <li class="list-group-item" v-for="a in articles2003" :key="a.name">
+                  <h3><a :href="a.link">{{a.name}}</a>
+                    <small>
+                      <span v-if="a.extras !== undefined"><a class v-for="extra in a.extras" :href="extra.path" :key="extra.path">[{{extra.name}}]</a></span>
+                    </small>
+                  </h3>
+                  <p><small>{{a.note}}</small></p>
+                  <div class="extraContainer" v-if="a.extras !== undefined"></div>
                 </li>
               </ul>
             </div>
@@ -99,7 +311,21 @@ export default {
   name: 'publications',
   data: function() {
     return {
-      showPublications: false,
+      showPublications2017: false,
+      showPublications2016: false,
+      showPublications2015: false,
+      showPublications2014: false,
+      showPublications2013: false,
+      showPublications2012: false,
+      showPublications2011: false,
+      showPublications2010: false,
+      showPublications2009: false,
+      showPublications2008: false,
+      showPublications2007: false,
+      showPublications2006: false,
+      showPublications2005: false,
+      showPublications2004: false,
+      showPublications2003: false,
       showBooks: false,
       showMagazines: false,
       showThesis: false,
@@ -120,7 +346,7 @@ export default {
           link: 'http://www.amazon.com/gp/product/1598290061/qid=1134776125/sr=1-1/ref=sr_1_1/104-3732392-4137503?s=books&v=glance&n=283155'
         }
       ],
-      articles: [
+      articles2017: [
         {
           name: 'Joint Prediction of Activity Labels and Starting Times in Untrimmed Videos',
           note: 'T. Mahmud, M. Hasan and A. Roy-Chowdhury, International Conference on Computer Vision, 2017.',
@@ -186,7 +412,9 @@ export default {
           note: 'J. H. Bappy, S. Paul, E. Tuncel and A. Roy-Chowdhury, IEEE Conf. on Computer Vision and Pattern Recognition, 2017.',
           link: 'static/publications/cvpr2017typicality.pdf',
           year: '2017'
-        },
+        }
+      ],
+      articles2016: [
         {
           name: 'Continuous adaptation of multi-camera person identification models through sparse non-redundant representative selection',
           note: 'A. Das, R. Panda, A. Roy-Chowdhury, Computer Vision and Image Understanding, 2016.',
@@ -316,7 +544,9 @@ export default {
           note: 'S. Zhang, Q. Zhu, A. Roy-Chowdhury, IEEE International Conf. on Image Processing, 2016.',
           link: 'static/publications/icip2016_pedestrian.pdf',
           year: '2016'
-        },
+        }
+      ],
+      articles2015: [
         {
           name: 'Context Aware Active Learning of Activity Recognition Models',
           note: 'M. Hasan, A. Roy-Chowdhury, International Conference on Computer Vision, 2015.',
@@ -400,7 +630,9 @@ export default {
             }
           ],
           year: '2015'
-        },
+        }
+      ],
+      articles2014: [
         {
           name: 'Context Aware Spatio-temporal Cell Tracking In Densely Packed Multilayer Tissues',
           note: 'A. Chakraborty, A. Roy-Chowdhury, Medical Image Analysis, 2014.',
@@ -488,7 +720,9 @@ export default {
             
           ],
           year: '2014'
-        },
+        }
+      ],
+      articles2013: [
         {
           name: 'Exploiting Spatio-Temporal Scene Structure for Wide-Area Activity Analysis in Unconstrained Environments',
           note: 'N. Nayak, Y. Zhu, A. Roy-Chowdhury, IEEE Trans. on Information Forensics and Security (Special Issue on Intelligent Video Surveillance), 2013.',
@@ -603,7 +837,9 @@ export default {
 
           ],
           year: '2013'
-        },
+        }
+      ],
+      articles2012: [
         {
           name: 'Collaborative Sensing In A Distributed PTZ Camera Network',
           note: 'C. Ding, B. Song, A. Morye, J. A. Farrell, A. Roy-Chowdhury, IEEE Trans. on Image Processing, 2012.',
@@ -660,7 +896,9 @@ export default {
 
           ],
           year: '2012'
-        },
+        }
+      ],
+      articles2011: [
         {
           name: 'Integrated Sensing and Analysis for Wide Area Scene Understanding',
           note: 'B. Song, C. Ding, A. Kamal, J. Farrell, A. Roy-Chowdhury, Signal Processing Magazine, May 2011.',
@@ -743,7 +981,9 @@ export default {
 
           ],
           year: '2011'
-        },
+        }
+      ],
+      articles2010: [
         {
           name: 'Tracking and Activity Recognition Through Consensus in Distributed Camera Networks',
           note: 'B. Song, A. Kamal, C. Soto, C. Ding, J. Farrell, A. Roy-Chowdhury, IEEE Trans. on Image Processing, 2010.',
@@ -809,7 +1049,9 @@ export default {
 
           ],
           year: '2010'
-        },
+        }
+      ],
+      articles2009: [
         {
           name: 'Rate-invariant Recognition of Humans and Their Activities',
           note: 'A. Veeraraghavan, A. Srivastava, A. Roy-Chowdhury and R. Chellappa, IEEE Trans. on Image Processing, June 2009.',
@@ -863,7 +1105,9 @@ export default {
 
           ],
           year: '2009'
-        },
+        }
+      ],
+      articles2008: [
         {
           name: 'Robust Tracking in A Camera Network: A Multi-Objective Optimization Framework',
           note: 'B. Song and A. Roy-Chowdhury, IEEE Journal on Selected Topics in Signal Processing: Special Issue on Distributed Processing in Vision Networks, August 2008.',
@@ -926,7 +1170,9 @@ export default {
 
           ],
           year: '2008'
-        },
+        }
+      ],
+      articles2007: [
         {
           name: 'Integrating Motion, Illumination and Structure in Video Sequences, With Applications in Illumination-Invariant Tracking',
           note: 'Y. Xu and A. Roy-Chowdhury, IEEE Trans. on Pattern Analysis and Machine Intelligence, May 2007.',
@@ -980,7 +1226,9 @@ export default {
 
           ],
           year: '2007'
-        },
+        }
+      ],
+      articles2006: [
         {
           name: 'The Function Space of an Activity',
           note: 'A. Veeraraghavan, R. Chellappa, A. Roy-Chowdhury, IEEE Computer Vision and Pattern Recognition, 2006.',
@@ -1007,7 +1255,9 @@ export default {
 
           ],
           year: '2006'
-        },
+        }
+      ],
+      articles2005: [
         {
           name: 'Matching Shape Sequences in Video with Applications in Human Motion Analysis',
           note: 'A. Veeraraghavan, A. Roy-Chowdhury, R. Chellappa, IEEE Trans. on Pattern Analysis and Machine Intelligence, pp. 1896-1909, December, 2005.',
@@ -1070,7 +1320,9 @@ export default {
 
           ],
           year: '2005'
-        },
+        }
+      ],
+      articles2004: [
         {
           name: 'Identification of Humans Using Gait',
           note: 'A. Kale, A.N. Rajagopalan, A. Sunderesan, N. Cuntoor, A. Roy-Chowdhury, V. Krueger, R. Chellappa, IEEE Trans. on Image Processing, pp. 1163-1173, Sept. 2004.',
@@ -1124,7 +1376,9 @@ export default {
 
           ],
           year: '2004'
-        },
+        }
+      ],
+      articles2003: [
         {
           name: 'Stochastic Approximation and Rate Distortion Analysis for Robust Structure and Motion Estimation',
           note: 'Amit K. Roy-Chowdhury, R. Chellappa, International Journal on Computer Vision. Volume 55(1), pp. 27-53, October 2003.',

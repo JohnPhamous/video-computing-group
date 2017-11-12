@@ -26,6 +26,11 @@
       return {
         news: [
           {
+            name: 'Drones to Grow Mind of Their Own',
+            link: 'https://ucrtoday.ucr.edu/49421',
+            image: 'Drone.jpg'
+          },
+          {
             name: 'Diversity-aware Multi-Video Summarization',
             link: 'TIP_Rameswar.pdf',
             image: 'tip.png'
