@@ -8,12 +8,12 @@
           <div class="col-md-6">
             <div class="row">
               <div class="person" v-for="member in facultyMembers" :key="member.name">
-                <div class="col-md-3" :key="member.name">
+                <div class="col-md-3 col-xs-5" :key="member.name">
                   <img :src="'static/img/people/' + member.image" class="img-responsive"/>
                 </div>
                 <div class="col-md-9">
                   <h4><strong>{{member.name}}</strong></h4>
-                  <p><strong>{{member.position}}</strong></p>
+                  <p>{{member.position}}</p>
                 </div>
                 <div class="col-md-12 personActions">
                   <a v-if="member.contact.email.length > 0" :href="'mailto:' + member.contact.email"  class="btn btn-primary btn-sm"><span class="fa fa-envelope-o"></span> Email</a>
@@ -27,15 +27,15 @@
           <div class="col-md-12 text-center">
             <h2>Graduate Students</h2>
           </div>
-          <div class="col-md-6 personContainer" v-for="member in grads" :key="member.name">
+          <div class="col-md-6 col-xs-12 personContainer" v-for="member in grads" :key="member.name">
             <div class="row">
               <div class="person" >
-                <div class="col-md-3" :key="member.name">
+                <div class="col-md-3 col-xs-5" :key="member.name">
                   <img :src="'static/img/people/' + member.image" class="img-responsive"/>
                 </div>
                 <div class="col-md-9">
                   <h4><strong>{{member.name}}</strong></h4>
-                  <p><strong>{{member.position}}</strong></p>
+                  <p>{{member.position}}</p>
                 </div>
                 <div class="col-md-12 personActions">
                   <a v-if="member.contact.email.length > 0" :href="'mailto:' + member.contact.email"  class="btn btn-primary btn-sm"><span class="fa fa-envelope-o"></span> Email</a>
@@ -52,12 +52,12 @@
           <div class="col-md-6 personContainer" v-for="member in undergrads" :key="member.name">
             <div class="row">
               <div class="person" >
-                <div class="col-md-3" :key="member.name">
+                <div class="col-md-3 col-xs-5" :key="member.name">
                   <img :src="'static/img/people/' + member.image" class="img-responsive"/>
                 </div>
                 <div class="col-md-9">
                   <h4><strong>{{member.name}}</strong></h4>
-                  <p><strong>{{member.position}}</strong></p>
+                  <p>{{member.position}}</p>
                   <p v-if="member.contact.mobile.length > 0" disabled><span class="fa fa-phone"></span> {{member.contact.mobile}}</p>
                 </div>
                 <div class="col-md-12 personActions">
@@ -75,12 +75,12 @@
           <div class="col-md-6 personContainer" v-for="member in visitors" :key="member.name">
             <div class="row">
               <div class="person" >
-                <div class="col-md-3" :key="member.name">
+                <div class="col-md-3 col-xs-5" :key="member.name">
                   <img :src="'static/img/people/' + member.image" class="img-responsive"/>
                 </div>
                 <div class="col-md-9">
                   <h4><strong>{{member.name}}</strong></h4>
-                  <p><strong>{{member.position}}</strong></p>
+                  <p>{{member.position}}</p>
                   <p v-if="member.contact.mobile.length > 0" disabled><span class="fa fa-phone"></span> {{member.contact.mobile}}</p>
                 </div>
                 <div class="col-md-12 personActions">
