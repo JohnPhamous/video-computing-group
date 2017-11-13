@@ -3,7 +3,10 @@
     <swiper :options="swiperOption">
     <!-- slides -->
     <swiper-slide v-for="n in news" :key="n.name">
-      <a :href="'../../static/publications/' + n.link"><img class="news" :src="'../../static/img/featured_news/' + n.image" :alt="n.name"></a>
+      <a :href="'../../static/publications/' + n.link">
+        <div v-if="n.type" class="banner"><strong>{{ n.type }}</strong></div>
+        <img class="news" :src="'../../static/img/featured_news/' + n.image" :alt="n.name">
+      </a>
       <a :href="'../../static/publications/' + n.link">
         {{ n.name }}
       </a>
@@ -56,22 +59,26 @@
           {
             name: 'Unsupervised Adaptive Re-identification in Open World Dynamic Camera Networks',
             link: 'cvpr2017reid.pdf',
-            image: 'cvpr.png'
+            image: 'cvpr.png',
+            type: 'CVPR 17'
           },
           {
             name: 'Collaborative Summarization of Topic-Related Videos',
             link: 'cvpr2017summ.pdf',
-            image: 'cvpr2017summ.png'
+            image: 'cvpr2017summ.png',
+            type: 'CVPR 17'
           },
           {
             name: 'Non-Uniform Subset Selection for Active Learning in Structured Data',
             link: 'cvpr2017subset.pdf',
-            image: 'cvpr2017typical.png'
+            image: 'cvpr2017typical.png',
+            type: 'CPVR 17'
           },
           {
             name: 'The Impact of Typicality for Informative Representative Selection',
             link: 'cvpr2017typicality.pdf',
-            image: 'cvpr2017typicality.png'
+            image: 'cvpr2017typicality.png',
+            type: 'CPVR 17'
           },
           {
             name: 'Online Adaptation for Joint Scene and Object Classification',
@@ -97,3 +104,21 @@
     },
   }
 </script>
+
+<style scoped>
+.banner {
+  height: 30px;
+  width: 100%;
+  background-color: #ffc800;
+  opacity: 0.80;
+  color: white;
+  text-align: center;
+  vertical-align: center;
+  line-height: 30px;
+  position: absolute;
+  z-index: 1;
+}
+.news {
+  /* position: absolute;? */
+}
+</style>
