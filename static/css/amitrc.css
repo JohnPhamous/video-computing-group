@@ -97,7 +97,7 @@ html, body {
 }
 
 .header-parent {
-    height: 150px;
+    height: 15vh;
     overflow: hidden;
     margin-left: 0;
     margin-right: 0;
@@ -105,6 +105,16 @@ html, body {
     border-bottom: 5px solid #ffc800;
 }
 
+@media (max-width: 1000px) {
+    .header-parent {
+        height: 8vh;
+        overflow: hidden;
+        margin-left: 0;
+        margin-right: 0;
+        border-top: 5px solid #ffc800;
+        border-bottom: 5px solid #ffc800;
+    }
+}
 .h2 {
     font-size: 25px;
 }

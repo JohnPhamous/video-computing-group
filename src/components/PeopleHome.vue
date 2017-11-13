@@ -124,7 +124,7 @@ export default {
           contact: {
             email: 'amitrc@ee.ucr.edu',
             mobile: '951-827-7886',
-            website: '/Amit'
+            website: '/amit'
           }
         }
       ],

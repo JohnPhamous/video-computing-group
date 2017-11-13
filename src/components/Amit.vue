@@ -2,13 +2,14 @@
    <div id="data" class="inherit-height">
       <div id="home-body">
         <div class="container row">
-          <div class="col-md-3">
+          <div class="col-md-3 col-xs-6">
               <img id="profile-picture" src="../../static/img/people/amit.jpg" alt="Amit">
           </div>
           <div class="col-md-4">
               <h2 id="name">Amit K. Roy-Chowdhury</h2>
-              <p><strong>Professor</strong>, Electrical and Computing Enginering</p>
-              <p><strong>Cooperating Faculty</strong>, Electrical and Computing Engineering</p>
+              <p><strong>Professor</strong>, <a href="http://ece.ucr.edu">Electrical and Computing Enginering</a></p>
+              <p><strong>Cooperating Faculty</strong>, <a href="http://ece.ucr.edu">Electrical and Computing Engineering</a></p>
+              <p><strong>Principal Investigator</strong>, <a href="./">Video Computing Group</a></p>
               <p><strong>Winston Chung Hall 431</strong>, UC Riverside</p>
               <div class="row">
                   <div class="col-md-6">

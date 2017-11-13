@@ -22,8 +22,21 @@
   import { swiper, swiperSlide } from 'vue-awesome-swiper'
   export default {
     name: 'carrousel',
+    methods: {
+      getViewportWidth: function () {
+        let width = document.documentElement.clientWidth
+
+        if (width < 800) {
+          return 1
+        }
+        else {
+          return 4
+        }
+      }
+    },
     data() {
       return {
+        viewportWidth: 4,
         news: [
           {
             name: 'Drones to Grow Mind of Their Own',
@@ -73,12 +86,9 @@
         ],
         notNextTick: true,
         swiperOption: {
-          // pagination: '.swiper-pagination',
           paginationClickable: true,
           autoplay: 1000,
-          // prevButton: '.swiper-button-prev',
-          // nextButton: '.swiper-button-next',
-          slidesPerView: 4,
+          slidesPerView: this.getViewportWidth(),
           paginationClickable: true,
           spaceBetween: 30,
           grabCursor: true
