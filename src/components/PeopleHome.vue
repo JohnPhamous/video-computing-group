@@ -7,17 +7,17 @@
           </div>
           <div class="col-md-6">
             <div class="row">
-              <div class="person" v-for="member in facultyMembers" :key="member.name">
-                <div class="col-md-3 col-xs-5" :key="member.name">
-                  <img :src="'static/img/people/' + member.image" class="img-responsive"/>
+              <div class="person">
+                <div class="col-md-3 col-xs-5">
+                  <img src="static/img/people/amit.jpg" class="img-responsive"/>
                 </div>
                 <div class="col-md-9">
-                  <h4><strong>{{member.name}}</strong></h4>
-                  <p>{{member.position}}</p>
+                  <h4><strong>Amit Roy-Chowdhury</strong></h4>
+                  <p>Professor, Electrical and Computer Engineering</p>
                 </div>
                 <div class="col-md-12 personActions">
-                  <a v-if="member.contact.email.length > 0" :href="'mailto:' + member.contact.email"  class="btn btn-primary btn-sm"><span class="fa fa-envelope-o"></span> Email</a>
-                  <a v-if="member.contact.website.length > 0" :href="member.contact.website"  class="btn btn-primary btn-sm"><span class="fa fa-globe"></span> Website</a>
+                  <a href="mailto:amitrc@ee.ucr.edu"  class="btn btn-primary btn-sm"><span class="fa fa-envelope-o"></span> Email</a>
+                  <router-link to="/amit"  class="btn btn-primary btn-sm"><span class="fa fa-globe"></span> Website</router-link>
                 </div>
               </div>
             </div>

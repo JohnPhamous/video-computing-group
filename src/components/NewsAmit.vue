@@ -3,13 +3,24 @@
     <swiper :options="swiperOption">
     <!-- slides -->
     <swiper-slide v-for="n in news" :key="n.name">
-      <a :href="'../../static/publications/' + n.link">
-        <div v-if="n.type" class="banner"><strong>{{ n.type }}</strong></div>
-        <img class="news" :src="'../../static/img/featured_news/' + n.image" :alt="n.name">
-      </a>
-      <a :href="'../../static/publications/' + n.link">
-        {{ n.name }}
-      </a>
+      <div v-if="n.link.length > 1">
+        <a :href="'../../static/publications/' + n.link">
+          <div v-if="n.type" class="banner"><strong>{{ n.type }}</strong></div>
+          <img class="news" :src="'../../static/img/featured_news/' + n.image" :alt="n.name">
+        </a>
+        <a :href="'../../static/publications/' + n.link">
+          {{ n.name }}
+        </a>
+      </div>
+      <div v-else>
+        <a :href="n.externalLink">
+          <div v-if="n.type" class="banner"><strong>{{ n.type }}</strong></div>
+          <img class="news" :src="'../../static/img/featured_news/' + n.image" :alt="n.name">
+        </a>
+        <a :href="n.externalLink">
+          {{ n.name }}
+        </a>
+      </div>
     </swiper-slide>
     <!-- Optional controls -->
     <!-- <div class="swiper-pagination"  slot="pagination"></div> -->
@@ -42,8 +53,33 @@
         viewportWidth: 4,
         news: [
           {
+            name: 'New NSF grant on Smart and Autonomous Systems',
+            link: '',
+            externalLink: 'https://www.nsf.gov/awardsearch/showAward?AWD_ID=1724341&HistoricalAwards=false',
+            image: 'smartautonomous.jpg'
+          },
+          {
+            name: 'Joint Prediction of Activity Labels and Starting Times in Untrimmed Videos',
+            link: 'ICCV_Tahmida.pdf',
+            image: 'iccv1.png',
+            type: 'ICCV 2017'
+          },
+          {
+            name: 'Exploiting Spatial Structure for Localizing Manipulated Image Regions',
+            link: 'ICCV_Jawad.pdf',
+            image: 'iccv2.png',
+            type: 'ICCV 2017'
+          },
+          {
+            name: 'Weakly Supervised Summarization of Web Videos',
+            link: 'ICCV_Rameswar.pdf',
+            image: 'iccv3.png',
+            type: 'ICCV 2017'
+          },
+          {
             name: 'Drones to Grow Mind of Their Own',
-            link: 'https://ucrtoday.ucr.edu/49421',
+            link: '',
+            externalLink: 'https://ucrtoday.ucr.edu/49421',
             image: 'Drone.jpg'
           },
           {

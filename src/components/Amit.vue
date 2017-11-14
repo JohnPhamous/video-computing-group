@@ -8,8 +8,8 @@
           <div class="col-md-4">
               <h2 id="name">Amit K. Roy-Chowdhury</h2>
               <p><strong>Professor</strong>, <a href="http://ece.ucr.edu">Electrical and Computing Enginering</a></p>
-              <p><strong>Cooperating Faculty</strong>, <a href="http://ece.ucr.edu">Electrical and Computing Engineering</a></p>
-              <p><strong>Principal Investigator</strong>, <a href="./">Video Computing Group</a></p>
+              <p><strong>Cooperating Faculty</strong>, <a href="http://ece.ucr.edu">Computer Science and Engineering</a></p>
+              <p><strong>Principal Investigator</strong>, <router-link to="/">Video Computing Group</router-link></p>
               <p><strong>Winston Chung Hall 431</strong>, UC Riverside</p>
               <div class="row">
                   <div class="col-md-6">

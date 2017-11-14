@@ -43,7 +43,7 @@ export default new Router({
     },
     {
       path: '/amit',
-      name: 'Amit',
+      name: 'amit',
       component: Amit
     },
     {
