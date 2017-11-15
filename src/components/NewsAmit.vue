@@ -5,7 +5,7 @@
     <swiper-slide v-for="n in news" :key="n.name">
       <div v-if="n.link.length > 1">
         <a :href="'../../static/publications/' + n.link">
-          <div v-if="n.type" class="banner"><strong>{{ n.type }}</strong></div>
+          <div v-if="n.type" class="banner" :style="convertToHex(n.type)"><strong>{{ n.type }}</strong></div>
           <img class="news" :src="'../../static/img/featured_news/' + n.image" :alt="n.name">
         </a>
         <a :href="'../../static/publications/' + n.link">
@@ -14,7 +14,7 @@
       </div>
       <div v-else>
         <a :href="n.externalLink">
-          <div v-if="n.type" class="banner"><strong>{{ n.type }}</strong></div>
+          <div v-if="n.type" class="banner" :style="convertToHex(n.type)"><strong>{{ n.type }}</strong></div>
           <img class="news" :src="'../../static/img/featured_news/' + n.image" :alt="n.name">
         </a>
         <a :href="n.externalLink">
@@ -22,11 +22,6 @@
         </a>
       </div>
     </swiper-slide>
-    <!-- Optional controls -->
-    <!-- <div class="swiper-pagination"  slot="pagination"></div> -->
-    <!-- <div class="swiper-button-prev" slot="button-prev"></div> -->
-    <!-- <div class="swiper-button-next" slot="button-next"></div> -->
-    <!-- <div class="swiper-scrollbar"   slot="scrollbar"></div> -->
   </swiper>
   </div>
   
@@ -37,15 +32,19 @@
   export default {
     name: 'carrousel',
     methods: {
-      getViewportWidth: function () {
-        let width = document.documentElement.clientWidth
+      convertToHex: function (typeName) {
+        let hash = 0;
+        for (let i = 0; i < typeName.length; i++) {
+          hash = typeName.charCodeAt(i) + ((hash << 5) - hash)
+        }
+        
+        let c = (hash & 0x00FFFFFF)
+        .toString(16)
+        .toUpperCase()
 
-        if (width < 800) {
-          return 1
-        }
-        else {
-          return 4
-        }
+        let styleObject = { backgroundColor: "#" + "00000".substring(0, 6 - c.length) + c }
+
+        return styleObject
       }
     },
     data() {
@@ -53,16 +52,17 @@
         viewportWidth: 4,
         news: [
           {
-            name: 'New NSF grant on Smart and Autonomous Systems',
+            name: 'Drones to Grow Mind of Their Own',
             link: '',
-            externalLink: 'https://www.nsf.gov/awardsearch/showAward?AWD_ID=1724341&HistoricalAwards=false',
-            image: 'smartautonomous.jpg'
+            externalLink: 'https://ucrtoday.ucr.edu/49421',
+            image: 'Drone.jpg',
+            type: 'NSF Grant 2017'
           },
           {
             name: 'Joint Prediction of Activity Labels and Starting Times in Untrimmed Videos',
             link: 'ICCV_Tahmida.pdf',
             image: 'iccv1.png',
-            type: 'ICCV 2017'
+            type: 'ICCV 2017', 
           },
           {
             name: 'Exploiting Spatial Structure for Localizing Manipulated Image Regions',
@@ -77,64 +77,72 @@
             type: 'ICCV 2017'
           },
           {
-            name: 'Drones to Grow Mind of Their Own',
-            link: '',
-            externalLink: 'https://ucrtoday.ucr.edu/49421',
-            image: 'Drone.jpg'
-          },
-          {
-            name: 'Diversity-aware Multi-Video Summarization',
-            link: 'TIP_Rameswar.pdf',
-            image: 'tip.png'
-          },
-          {
-            name: 'Multi-View Surveillance Video Summarization via Joint Embedding and Sparse Optimization',
-            link: 'TMM_Rameswar.pdf',
-            image: 'tmm.png'
-          },
-          {
             name: 'Unsupervised Adaptive Re-identification in Open World Dynamic Camera Networks',
             link: 'cvpr2017reid.pdf',
             image: 'cvpr.png',
-            type: 'CVPR 17'
+            type: 'CVPR 2017'
           },
           {
             name: 'Collaborative Summarization of Topic-Related Videos',
             link: 'cvpr2017summ.pdf',
             image: 'cvpr2017summ.png',
-            type: 'CVPR 17'
+            type: 'CVPR 2017'
           },
           {
             name: 'Non-Uniform Subset Selection for Active Learning in Structured Data',
             link: 'cvpr2017subset.pdf',
             image: 'cvpr2017typical.png',
-            type: 'CPVR 17'
+            type: 'CVPR 2017'
           },
           {
             name: 'The Impact of Typicality for Informative Representative Selection',
             link: 'cvpr2017typicality.pdf',
             image: 'cvpr2017typicality.png',
-            type: 'CPVR 17'
+            type: 'CVPR 2017'
           },
           {
-            name: 'Online Adaptation for Joint Scene and Object Classification',
+            name: 'Distributed Multi-target Tracking and Data Association in Vision Networks ',
             link: 'eccv2016_jawad.pdf',
-            image: 'eccv2016_jawad.png'
+            image: 'eccv2016_jawad.png',
+            type: 'IEEE - TPAMI 2017'
           },
           {
-            name: 'Temporal Model Adaptation for Person Re-Identification',
-            link: 'niki-eccv16.pdf',
-            image: 'niki-eccv16.png'
-          }      
+          name: 'Re-Identification in the Function Space of Feature Warps',
+          image: 'tpami.png',
+          link: 'PAMI14-Reid.pdf',
+          type: 'IEEE - TPAMI 2017'
+          },
+          {
+            name: 'Diversity-aware Multi-Video Summarization',
+            link: 'TIP_Rameswar.pdf',
+            image: 'tip.png',
+            type: 'IEEE - TIP 2017'
+          },
+          {
+            name: 'Multi-View Surveillance Video Summarization via Joint Embedding and Sparse Optimization',
+            link: 'TMM_Rameswar.pdf',
+            image: 'tmm.png',
+            type: 'IEEE - TMM 2017'
+          },    
         ],
         notNextTick: true,
         swiperOption: {
           paginationClickable: true,
-          autoplay: 1000,
-          slidesPerView: this.getViewportWidth(),
-          paginationClickable: true,
+          autoplay: 2000,
+          slidesPerView: 4,
           spaceBetween: 30,
-          grabCursor: true
+          grabCursor: true,
+          watchSlidesProgress: true,
+          watchSlidesVisibility: true,
+          disableOnInteraction: true,
+          breakpoints: {
+            800: {
+              slidesPerView: 1
+            },
+            1000: {
+              slidesPerView: 2
+            }
+          }
         }
       }
     },
@@ -143,18 +151,18 @@
 
 <style scoped>
 .banner {
-  height: 30px;
+  height: 5vh;
   width: 100%;
-  background-color: #ffc800;
+  /* background-color: #ffc800; */
   opacity: 0.80;
   color: white;
   text-align: center;
   vertical-align: center;
-  line-height: 30px;
+  line-height: 5vh;
   position: absolute;
   z-index: 1;
 }
 .news {
-  /* position: absolute;? */
+  height: 100%;
 }
 </style>

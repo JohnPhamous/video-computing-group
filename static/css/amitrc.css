@@ -107,7 +107,7 @@ html, body {
 
 @media (max-width: 1000px) {
     .header-parent {
-        height: 8vh;
+        height: 12vh;
         overflow: hidden;
         margin-left: 0;
         margin-right: 0;
@@ -115,6 +115,19 @@ html, body {
         border-bottom: 5px solid #ffc800;
     }
 }
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #FFF;
+}
+
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+    background-color: #003687;
+}
+
+.navbar-default .navbar-nav .open .dropdown-menu > li > a:focus, .navbar-default .navbar-nav .open .dropdown-menu > li > a, a:hover {
+    color: #FFF;
+}
+
 .h2 {
     font-size: 25px;
 }

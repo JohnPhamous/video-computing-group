@@ -4,24 +4,32 @@
         <div class="container row">
           <div class="col-md-12">
               <h2 id="name">Activity Recognition and Prediction</h2>
-              <img class="research-img" src="../../../static/img/research/graph-structure-activity-forecasting.png" alt="Graph Structure">
+              <img class="research-img" src="../../../static/img/research/Scene1Cam37.gif" alt="Scene1Cam37">
               <p>
-                  In this project, we investigate the problem of forecasting future activities in continuous videos. Ability to successfully forecast activities that are yet to be observed is a very important video understanding problem, and is starting to receive attention in the computer vision literature. An activity forecasting strategy that models the simultaneous and/or sequential nature of human activities on a graph and combines that with the interrelationship between static scene cues and dynamic target trajectories is explored.
+                The goal of this project is to retrieve segments from a video database given a video clip of an activity of interest. Not only does this require development of activity recognition algorithms, these algorithms need to be integrated with video search and retrieval methods in large databases.
               </p>
 
-              <h4><span class="publicationHeader">Sample Publications</span> <button class="btn btn-primary" @click="showActivityPublications = !showActivityPublications">Toggle</button></h4>
+              <h3>Activity Forecasting <button class="btn btn-primary" @click="showActivity = !showActivity">View</button></h3>
+              <div v-show="showActivity">
+                <img class="research-img" src="../../../static/img/research/graph-structure-activity-forecasting.png" alt="Graph Structure">
+                <p>
+                    In this project, we investigate the problem of forecasting future activities in continuous videos. Ability to successfully forecast activities that are yet to be observed is a very important video understanding problem, and is starting to receive attention in the computer vision literature. An activity forecasting strategy that models the simultaneous and/or sequential nature of human activities on a graph and combines that with the interrelationship between static scene cues and dynamic target trajectories is explored.
+                </p>
 
-                <ul class="list-group" v-show="showActivityPublications">
-                    <li class="list-group-item" v-for="a in activityPublications" :key="a.name">
-                    <a :href="a.link">
-                        <h5>{{a.name}}</h5>
-                        <p><small>{{a.note}}</small></p>
-                    </a>
-                    <div class="extraContainer" v-if="a.extras !== undefined">
-                        <a class="btn btn-primary" v-for="extra in a.extras" :href="extra.path" :key="extra.path">{{extra.name}}</a>
-                    </div>
-                    </li>
-                </ul>
+                <h4><span class="publicationHeader">Sample Publications</span> <button class="btn btn-primary" @click="showActivityPublications = !showActivityPublications">Toggle</button></h4>
+
+                  <ul class="list-group" v-show="showActivityPublications">
+                      <li class="list-group-item" v-for="a in activityPublications" :key="a.name">
+                      <a :href="a.link">
+                          <h5>{{a.name}}</h5>
+                          <p><small>{{a.note}}</small></p>
+                      </a>
+                      <div class="extraContainer" v-if="a.extras !== undefined">
+                          <a class="btn btn-primary" v-for="extra in a.extras" :href="extra.path" :key="extra.path">{{extra.name}}</a>
+                      </div>
+                      </li>
+                  </ul>
+              </div>
 
               <hr/>
 
@@ -56,6 +64,7 @@
 export default {
   data: function () {
     return {
+      showActivity: false,
       showActivityPublications: false,
       activityPublications: [
         {
